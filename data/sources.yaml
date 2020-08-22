@@ -1,0 +1,115 @@
+- provider: github
+  handle: CoreyGinnivan
+  repo: CoreyGinnivan/system-uicons
+  branch: master
+  directory: src/images/icons
+  website: 'https://systemuicons.com/'
+
+- provider: github
+  handle: Iconscout
+  repo: Iconscout/unicons
+  branch: master
+  directory: svg
+
+- provider: github
+  handle: nicodinh
+  repo: nicodinh/kenney-icon-font/
+  branch: develop
+  directory: svgs
+
+- provider: github
+  handle: teenyicons
+  repo: teenyicons/teenyicons
+  branch: master
+  directory: src
+
+- provider: github
+  handle: twbs
+  repo: twbs/icons
+  branch: main
+  directory: icons
+
+- provider: github
+  handle: tabler
+  repo: tabler/tabler-icons
+  branch: master
+  directory: icons
+  website: 'https://tablericons.com/'
+
+- provider: github
+  handle: astrit
+  repo: astrit/css.gg/
+  branch: master
+  directory: icons/svg
+
+- provider: github
+  handle: tailwindlabs
+  repo: tailwindlabs/heroicons
+  branch: master
+  directory: src
+
+- provider: github
+  handle: andreasbm
+  repo: andreasbm/web-skills
+  branch: master
+  directory: assets
+
+- provider: github
+  handle: akveo
+  repo: akveo/eva-icons
+  branch: master
+  directory: package/icons
+
+- provider: github
+  handle: coreui
+  repo: coreui/coreui-icons
+  branch: master
+  directory: svg/free
+
+- provider: github
+  handle: microsoft
+  repo: microsoft/vscode-icons
+  branch: master
+  directory: icons
+
+- provider: github
+  handle: jxnblk
+  repo: jxnblk/geomicons-open
+  branch: master
+  directory: dist/icons
+
+- provider: github
+  handle: zendeskgarden
+  repo: zendeskgarden/svg-icons
+  branch: main
+  directory: src/26
+
+- provider: github
+  handle: denali-design
+  repo: denali-design/denali-icons-svg
+  branch: master
+  directory: svg
+
+- provider: github
+  handle: danklammer
+  repo: danklammer/bytesize-icons
+  branch: master
+  directory: dist/icons
+
+- provider: github
+  handle: Ilaris-Kit
+  repo: Ilaris-Kit/oculus-ilaris
+  branch: master
+  directory: icons
+
+- provider: github
+  handle: cat-in-136
+  repo: cat-in-136/JISZ8210_Symbols_SVG
+  branch: master
+  directory: Public_Information_Symbols
+
+- provider: github
+  handle: game-icons
+  repo: game-icons/icons
+  branch: master
+  directory: ''

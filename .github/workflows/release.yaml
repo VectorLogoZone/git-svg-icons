@@ -1,0 +1,67 @@
+name: build
+
+on:
+  schedule:
+    - cron: '42 0 * * 1'
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install sh unidecode pyaml
+
+      - name: Build Github Index
+        run: ./build-github.sh
+
+      - run: echo "::set-env name=RELEASE_DATE::$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+      - run: echo "::set-env name=RELEASE_TAG::$(date -u +%Y%m%d-%H%M%S)"
+      - run: echo "Release date is ${{ env.RELEASE_DATE }}"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ env.RELEASE_TAG }}
+          release_name: Release ${{ env.RELEASE_DATE }}
+          body: |
+            Automatically created on $(date)
+          draft: false
+          prerelease: false
+
+      - name: Upload Github .tgz
+        id: upload_github
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./build/sourceData-github.tgz
+          asset_name: sourceData-github.tgz
+          asset_content_type: application/gzip
+
+      - name: Upload Gitlab .tgz
+        id: upload_gitlab
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./build/sourceData-gitlab.tgz
+          asset_name: sourceData-gitlab.tgz
+          asset_content_type: application/gzip
