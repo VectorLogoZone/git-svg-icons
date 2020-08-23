@@ -148,6 +148,7 @@ for repo_handle in args.repos:
 
     pathfix = re.compile(repodata["rename"][0]) if "rename" in repodata else None
     include_pattern = re.compile(repodata["include"]) if "include" in repodata else None
+    exclude_pattern = re.compile(repodata["exclude"]) if "exclude" in repodata else None
 
     srcpaths = []
     for srcpath in pathlib.Path(logodir).glob("**/*.svg"):
@@ -173,13 +174,24 @@ for repo_handle in args.repos:
         fixdir, fixname = os.path.split(shortpath)
 
         if include_pattern:
-            if include_pattern.match(fixname) == None:
+            includepath = os.path.join(srcpath[len(logodir)+1:] if len(repodata["directory"]) > 0 else srcpath[len(logodir):])
+            if include_pattern.match(includepath) == None:
                 if args.verbose:
-                    sys.stdout.write("INFO: include filter is skipping '%s'\n" % (fixname))
+                    sys.stdout.write("INFO: include filter is skipping '%s'\n" % (includepath))
                 continue
             else:
                 if args.verbose:
-                    sys.stdout.write("INFO: include filter okay for '%s'\n" % (fixname))
+                    sys.stdout.write("INFO: include filter okay for '%s'\n" % (includepath))
+
+        if exclude_pattern:
+            excludepath = os.path.join(srcpath[len(logodir)+1:] if len(repodata["directory"]) > 0 else srcpath[len(logodir):])
+            if exclude_pattern.match(excludepath) != None:
+                if args.verbose:
+                    sys.stdout.write("INFO: exclude filter is skipping '%s'\n" % (excludepath))
+                continue
+            else:
+                if args.verbose:
+                    sys.stdout.write("INFO: exclude filter okay for '%s'\n" % (excludepath))
 
         if pathfix is not None:
             fixname = pathfix.sub(repodata["rename"][1], fixname)

@@ -113,3 +113,12 @@
   repo: game-icons/icons
   branch: master
   directory: ''
+  exclude: '^delapouite/.*'
+
+- provider: github
+  handle: game-icons-white
+  repo: game-icons/icons
+  branch: master
+  directory: ''
+  include: '^delapouite/.*'
+  css: gridbg

@@ -22,7 +22,7 @@ OUTPUT_DIR=${OUTPUT_DIR:-./local}
 # representative subset of repos
 #
 #DEV_REPO="${DEV_REPO:-adamfairhead,brandicons,bestofjs,vlz-ar21,svgporn}"
-DEV_REPO=""
+DEV_REPO=${DEV_REPO:-}
 
 #
 # LATER: make dir if it doesn't exist
