@@ -1,124 +1,359 @@
-- provider: github
-  handle: CoreyGinnivan
+
+- handle: akveo
+  repo: akveo/eva-icons
+  branch: master
+  directory: package/icons
+  provider: github
+
+- handle: andreasbm
+  repo: andreasbm/web-skills
+  branch: master
+  directory: assets
+  provider: github
+
+- handle: ant-design
+  repo: ant-design/ant-design-icons
+  branch: master
+  directory: packages/icons-svg/svg
+  provider: github
+
+- handle: astrit
+  repo: astrit/css.gg/
+  branch: master
+  directory: icons/svg
+  provider: github
+
+- handle: cat-in-136
+  repo: cat-in-136/JISZ8210_Symbols_SVG
+  branch: master
+  directory: Public_Information_Symbols
+  provider: github
+
+- handle: ccicons
+  repo: cc-icons/cc-icons
+  branch: master
+  directory: fonts/cc-icons-svg
+  provider: github
+
+- handle: cjpatoilo
+  repo: cjpatoilo/linearicons
+  branch: master
+  directory: dist/svg
+  provider: github
+
+- handle: coreui
+  repo: coreui/coreui-icons
+  branch: master
+  directory: svg/free
+  provider: github
+
+- handle: CoreyGinnivan
   repo: CoreyGinnivan/system-uicons
   branch: master
   directory: src/images/icons
   website: 'https://systemuicons.com/'
+  provider: github
 
-- provider: github
-  handle: Iconscout
-  repo: Iconscout/unicons
+- handle: danielbruce
+  repo: danielbruce/entypo
   branch: master
-  directory: svg
+  directory: src/svg
+  provider: github
 
-- provider: github
-  handle: nicodinh
-  repo: nicodinh/kenney-icon-font/
-  branch: develop
-  directory: svgs
-
-- provider: github
-  handle: teenyicons
-  repo: teenyicons/teenyicons
-  branch: master
-  directory: src
-
-- provider: github
-  handle: twbs
-  repo: twbs/icons
-  branch: main
-  directory: icons
-
-- provider: github
-  handle: tabler
-  repo: tabler/tabler-icons
-  branch: master
-  directory: icons
-  website: 'https://tablericons.com/'
-
-- provider: github
-  handle: astrit
-  repo: astrit/css.gg/
-  branch: master
-  directory: icons/svg
-
-- provider: github
-  handle: tailwindlabs
-  repo: tailwindlabs/heroicons
-  branch: master
-  directory: src
-
-- provider: github
-  handle: andreasbm
-  repo: andreasbm/web-skills
-  branch: master
-  directory: assets
-
-- provider: github
-  handle: akveo
-  repo: akveo/eva-icons
-  branch: master
-  directory: package/icons
-
-- provider: github
-  handle: coreui
-  repo: coreui/coreui-icons
-  branch: master
-  directory: svg/free
-
-- provider: github
-  handle: microsoft
-  repo: microsoft/vscode-icons
-  branch: master
-  directory: icons
-
-- provider: github
-  handle: jxnblk
-  repo: jxnblk/geomicons-open
-  branch: master
-  directory: dist/icons
-
-- provider: github
-  handle: zendeskgarden
-  repo: zendeskgarden/svg-icons
-  branch: main
-  directory: src/26
-
-- provider: github
-  handle: denali-design
-  repo: denali-design/denali-icons-svg
-  branch: master
-  directory: svg
-
-- provider: github
-  handle: danklammer
+- handle: danklammer
   repo: danklammer/bytesize-icons
   branch: master
   directory: dist/icons
+  provider: github
 
-- provider: github
-  handle: Ilaris-Kit
-  repo: Ilaris-Kit/oculus-ilaris
+- handle: daviddarnes
+  repo: daviddarnes/mac-cursors
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: davidmerfield
+  repo: davidmerfield/Public-Icons
+  branch: master
+  directory: source/icons
+  provider: github
+
+- handle: denali-design
+  repo: denali-design/denali-icons-svg
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: developmentseed
+  repo: developmentseed/collecticons-lib
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: encharm
+  repo: encharm/Font-Awesome-SVG-PNG
+  branch: master
+  directory: black/svg
+  provider: github
+
+- handle: erikflowers
+  repo: erikflowers/weather-icons
+  branch: master
+  directory: svg
+  rename: "^wi-(.*)$"
+  provider: github
+
+- handle: evilicons
+  repo: evil-icons/evil-icons
+  branch: master
+  directory: assets/icons
+  rename: "ei-(.*)$"
+  provider: github
+
+- handle: feathericons
+  repo: feathericons/feather
   branch: master
   directory: icons
+  provider: github
 
-- provider: github
-  handle: cat-in-136
-  repo: cat-in-136/JISZ8210_Symbols_SVG
+- handle: fontello
+  repo: fontello/fontelico.font
   branch: master
-  directory: Public_Information_Symbols
+  directory: src/svg
+  provider: github
 
-- provider: github
-  handle: game-icons
+- handle: frexy
+  repo: frexy/glyph-iconset
+  branch: master
+  directory: svg
+  rename: "^si-glyph-(.*)$"
+  provider: github
+
+- handle: game-icons
   repo: game-icons/icons
   branch: master
   directory: ''
   exclude: '^delapouite/.*'
+  provider: github
 
-- provider: github
-  handle: game-icons-white
+- handle: game-icons-white
   repo: game-icons/icons
   branch: master
   directory: ''
   include: '^delapouite/.*'
   css: gridbg
+  provider: github
+
+- handle: gmgeo
+  repo: gmgeo/osmic
+  branch: master
+  directory: ''
+
+# Needs complicated renames: https://github.com/google/material-design-icons
+  provider: github
+
+- handle: halfmage
+  repo: halfmage/raster
+  branch: master
+  directory: icons
+  provider: github
+
+- handle: iconic
+  repo: iconic/open-iconic
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: Iconscout
+  repo: Iconscout/unicons
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: Ilaris-Kit
+  repo: Ilaris-Kit/oculus-ilaris
+  branch: master
+  directory: icons
+  provider: github
+
+- handle: ionic-team
+  repo: ionic-team/ionicons
+  branch: master
+  directory: src/svg
+  provider: github
+
+- handle: jackd248
+  repo: jackd248/weather-iconic
+  branch: master
+  directory: sources/SVG
+  provider: github
+
+- handle: jetbrains
+  repo: JetBrains/icons
+  branch: master
+  directory: src
+  provider: github
+
+- handle: jxnblk
+  repo: jxnblk/geomicons-open
+  branch: master
+  directory: dist/icons
+  provider: github
+
+- handle: keyamoon
+  repo: Keyamoon/IcoMoon-Free
+  branch: master
+  directory: SVG
+  rename: "^[0-9]{3}-(.*)$"
+  provider: github
+
+- handle: kickstandapps
+  repo: kickstandapps/WeatherIcons
+  branch: master
+  directory: "SVG Files"
+
+# Check for duplicates: https://github.com/leungwensen/svg-icon/tree/master/dist/svg
+  provider: github
+
+- handle: lucijanblagonic
+  repo: lucijanblagonic/Washicons
+  branch: master
+  directory: svg
+  rename: "^wh-(.*)$"
+  provider: github
+
+- handle: manifestinteractive
+  repo: manifestinteractive/weather-underground-icons
+  branch: master
+  directory: dist/icons/solid-black/svg
+  provider: github
+
+- handle: mapbox
+  repo: mapbox/maki
+  branch: master
+  directory: icons
+  # LATER: rename
+  provider: github
+
+- handle: mariuszostrowski
+  repo: mariuszostrowski/subway
+  branch: master
+  directory: SVG
+  provider: github
+
+- handle: michaelampr
+  repo: michaelampr/jam
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: microsoft
+  repo: microsoft/vscode-icons
+  branch: master
+  directory: icons
+  provider: github
+
+- handle: nicodinh
+  repo: nicodinh/kenney-icon-font/
+  branch: develop
+  directory: svgs
+  notes: has some invalid SVGs
+  provider: github
+
+- handle: paomedia
+  repo: paomedia/small-n-flat
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: reduxframework
+  repo: reduxframework/elusive-iconfont
+  branch: master
+  directory: dev/icons-svg
+  provider: github
+
+- handle: rrzepp
+  repo: RRZE-PP/rrze-icon-set
+  branch: master
+  directory: ''
+  provider: github
+
+- handle: scottdejonge
+  repo: scottdejonge/map-icons
+  branch: master
+  directory: src/icons
+  provider: github
+
+- handle: somerandomdude
+  repo: somerandomdude/Iconic
+  branch: master
+  directory: vector/original
+  provider: github
+
+- handle: stephenhutchings
+  repo: stephenhutchings/typicons.font
+  branch: master
+  directory: src/svg
+  provider: github
+
+- handle: tabler
+  repo: tabler/tabler-icons
+  branch: master
+  directory: icons
+  website: 'https://tablericons.com/'
+  provider: github
+
+- handle: tailwindlabs
+  repo: tailwindlabs/heroicons
+  branch: master
+  directory: src
+  provider: github
+
+- handle: teenyicons
+  repo: teenyicons/teenyicons
+  branch: master
+  directory: src
+  provider: github
+
+- handle: templarian
+  repo: Templarian/MaterialDesign
+  branch: master
+  directory: svg
+  provider: github
+
+- handle: templarian-windows
+  repo: Templarian/WindowsIcons
+  branch: master
+  directory: WindowsPhone/svg
+  provider: github
+
+- handle: twbs
+  repo: twbs/icons
+  branch: main
+  directory: icons
+  provider: github
+
+- handle: uditkumar489
+  repo: uditkumar489/Icon-pack
+  branch: master
+  directory: ''
+  provider: github
+
+- handle: xtoolkit
+  repo: xtoolkit/Micon
+  branch: master
+  directory: icons/mdl2
+  provider: github
+
+- handle: zendeskgarden
+  repo: zendeskgarden/svg-icons
+  branch: main
+  directory: src/26
+  provider: github
+
+- handle: zurb
+  repo: zurb/foundation-icon-fonts
+  branch: master
+  directory: svgs
+  rename: "^fi-(.*)$"
+  provider: github
