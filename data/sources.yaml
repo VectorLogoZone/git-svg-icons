@@ -4,6 +4,8 @@
   branch: master
   directory: package/icons
   provider: github
+  name: Eva Icons
+  website: https://akveo.github.io/eva-icons/
 
 - handle: andreasbm
   repo: andreasbm/web-skills
@@ -21,6 +23,34 @@
   repo: astrit/css.gg/
   branch: master
   directory: icons/svg
+  provider: github
+
+- handle: atisawd
+  repo: atisawd/boxicons
+  branch: master
+  directory: svg
+  name: BoxIcons
+  rename: "^bx[sil]-(.*)$"
+  provider: github
+
+- handle: automattic
+  repo: Automattic/gridicons
+  branch: master
+  directory: svg-min
+  provider: github
+  rename: "^gridicons-(.*)$"
+
+- handle: bpmn-io
+  repo: bpmn-io/bpmn-font
+  branch: master
+  directory: source/symbols
+  provider: github
+
+- handle: carbon-design
+  repo: carbon-design-system/carbon
+  branch: master
+  directory: packages/icons/src/svg
+  name: "Carbon Design Icons (IBM)"
   provider: github
 
 - handle: cat-in-136
@@ -46,6 +76,8 @@
   branch: master
   directory: svg/free
   provider: github
+  name: "CoreUI Icons"
+  website: https://icons.coreui.io/icons/
 
 - handle: CoreyGinnivan
   repo: CoreyGinnivan/system-uicons
@@ -59,6 +91,8 @@
   branch: master
   directory: src/svg
   provider: github
+  name: Entypo
+  website: http://www.entypo.com/
 
 - handle: danklammer
   repo: danklammer/bytesize-icons
@@ -90,6 +124,19 @@
   directory: svg
   provider: github
 
+- handle: doc88
+  repo: doc88git/flux-icon
+  branch: master
+  directory: src/assets/24px
+  provider: github
+
+- handle: dukestreetstudio
+  repo: dukestreetstudio/zondicons
+  branch: master
+  directory: src
+  provider: github
+  name: Zondicons
+
 - handle: encharm
   repo: encharm/Font-Awesome-SVG-PNG
   branch: master
@@ -108,6 +155,12 @@
   branch: master
   directory: assets/icons
   rename: "ei-(.*)$"
+  provider: github
+
+- handle: feathericon
+  repo: feathericon/feathericon
+  branch: master
+  directory: src/svg
   provider: github
 
 - handle: feathericons
@@ -148,9 +201,10 @@
   repo: gmgeo/osmic
   branch: master
   directory: ''
+  provider: github
 
 # Needs complicated renames: https://github.com/google/material-design-icons
-  provider: github
+# same? https://github.com/material-icons/material-icons/tree/master/svg
 
 - handle: halfmage
   repo: halfmage/raster
@@ -158,17 +212,35 @@
   directory: icons
   provider: github
 
+- handle: icons8-line
+  repo: icons8/line-awesome
+  branch: master
+  directory: svg
+  provider: github
+  name: "Icons8 Line Awesome"
+  website: https://icons8.com/line-awesome
+
+- handle: icons8-flat-color
+  repo: icons8/flat-color-icons
+  branch: master
+  directory: svg
+  provider: github
+  name: "Icons8 Flat Color"
+  website: https://icons8.github.io/flat-color-icons/
+
 - handle: iconic
   repo: iconic/open-iconic
   branch: master
   directory: svg
   provider: github
 
-- handle: Iconscout
+- handle: iconscout
   repo: Iconscout/unicons
   branch: master
   directory: svg
   provider: github
+  name: Unicons
+  website: https://iconscout.com/icons
 
 - handle: Ilaris-Kit
   repo: Ilaris-Kit/oculus-ilaris
@@ -181,6 +253,7 @@
   branch: master
   directory: src/svg
   provider: github
+  name: Ionicons
 
 - handle: jackd248
   repo: jackd248/weather-iconic
@@ -206,14 +279,15 @@
   directory: SVG
   rename: "^[0-9]{3}-(.*)$"
   provider: github
+  name: IcoMoon
 
 - handle: kickstandapps
   repo: kickstandapps/WeatherIcons
   branch: master
   directory: "SVG Files"
+  provider: github
 
 # Check for duplicates: https://github.com/leungwensen/svg-icon/tree/master/dist/svg
-  provider: github
 
 - handle: lucijanblagonic
   repo: lucijanblagonic/Washicons
@@ -246,12 +320,30 @@
   branch: master
   directory: svg
   provider: github
+  website: https://jam-icons.com/
+  name: "Jam Icons"
+
+#- handle: microsoft-codicons
+#  repo: microsoft/vscode-codicons
+#  branch: master
+#  directory: src/icons
+#  name: "Codicons (Microsoft)"
+#  provider: github
 
 - handle: microsoft
   repo: microsoft/vscode-icons
   branch: master
   directory: icons
   provider: github
+  name: "VSCode Icons (Microsoft)"
+
+- handle: mikolajdobrucki
+  repo: mikolajdobrucki/ikonate
+  branch: master
+  directory: icons
+  provider: github
+  website: https://ikonate.com/
+  name: "Ikonate"
 
 - handle: nicodinh
   repo: nicodinh/kenney-icon-font/
@@ -260,16 +352,47 @@
   notes: has some invalid SVGs
   provider: github
 
+- handle: opensourcedesign
+  repo: opensourcedesign/icons
+  branch: master
+  directory: ''
+  provider: github
+
+- handle: optimizely
+  repo: optimizely/react-oui-icons
+  branch: master
+  directory: assets/svgs
+  provider: github
+
 - handle: paomedia
   repo: paomedia/small-n-flat
   branch: master
   directory: svg
   provider: github
 
+- handle: pprince
+  repo: pprince/etlinefont-bower
+  branch: master
+  directory: images/svg/individual_icons
+  provider: github
+
+- handle: primer
+  repo: primer/octicons
+  branch: master
+  directory: icons
+  name: Octicons (Github Primer)
+  provider: github
+
 - handle: reduxframework
   repo: reduxframework/elusive-iconfont
   branch: master
   directory: dev/icons-svg
+  provider: github
+
+- handle: remix-design
+  repo: Remix-Design/RemixIcon
+  branch: master
+  directory: icons
   provider: github
 
 - handle: rrzepp
@@ -303,11 +426,19 @@
   website: 'https://tablericons.com/'
   provider: github
 
+- handle: taigaio
+  repo: taigaio/taiga-design
+  branch: master
+  directory: icons
+  provider: github
+
 - handle: tailwindlabs
   repo: tailwindlabs/heroicons
   branch: master
   directory: src
   provider: github
+  website: https://heroicons.com/
+  name: Hero Icons
 
 - handle: teenyicons
   repo: teenyicons/teenyicons
@@ -320,11 +451,26 @@
   branch: master
   directory: svg
   provider: github
+  name: "Material Design"
+  website: http://materialdesignicons.com/
+
+- handle: templarian-light
+  repo: Templarian/MaterialDesignLight
+  branch: master
+  directory: icons/svg
+  name: Material Design Light
+  provider: github
 
 - handle: templarian-windows
   repo: Templarian/WindowsIcons
   branch: master
   directory: WindowsPhone/svg
+  provider: github
+
+- handle: topcoat
+  repo: topcoat/icons
+  branch: master
+  directory: svg
   provider: github
 
 - handle: twbs
@@ -338,6 +484,22 @@
   branch: master
   directory: ''
   provider: github
+
+- handle: vaadin
+  repo: vaadin/vaadin-icons
+  branch: master
+  directory: assets/svg
+  website: https://vaadin.com/components/vaadin-icons
+  provider: github
+
+- handle: wordpress
+  repo: WordPress/dashicons
+  branch: master
+  directory: sources/svg
+  provider: github
+  name: DashIcons (WordPress)
+
+# collections: https://github.com/Xaviju/inkscape-open-symbols
 
 - handle: xtoolkit
   repo: xtoolkit/Micon
@@ -357,3 +519,4 @@
   directory: svgs
   rename: "^fi-(.*)$"
   provider: github
+  name: Foundation (Zurb)
