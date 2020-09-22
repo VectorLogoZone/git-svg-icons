@@ -27,6 +27,9 @@ jobs:
       - name: Build Github Index
         run: ./build-github.sh
 
+      - name: Build Gitlab Index
+        run: ./build-gitlab.sh
+
       - run: echo "::set-env name=RELEASE_DATE::$(date -u +%Y-%m-%dT%H:%M:%SZ)"
       - run: echo "::set-env name=RELEASE_TAG::$(date -u +%Y%m%d-%H%M%S)"
       - run: echo "Release date is ${{ env.RELEASE_DATE }}"

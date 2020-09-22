@@ -7,6 +7,12 @@
   name: Eva Icons
   website: https://akveo.github.io/eva-icons/
 
+- handle: amirhabibzadeh
+  repo: amir_habibzadeh/icons
+  branch: master
+  directory: svg
+  provider: gitlab
+
 - handle: andreasbm
   repo: andreasbm/web-skills
   branch: master
@@ -20,7 +26,7 @@
   provider: github
 
 - handle: astrit
-  repo: astrit/css.gg/
+  repo: astrit/css.gg
   branch: master
   directory: icons/svg
   provider: github
@@ -39,6 +45,12 @@
   directory: svg-min
   provider: github
   rename: "^gridicons-(.*)$"
+
+- handle: axiansdeveloper
+  repo: axiansdeveloper/networking-icons
+  branch: master
+  directory: ''
+  provider: gitlab
 
 - handle: bpmn-io
   repo: bpmn-io/bpmn-font
@@ -63,6 +75,14 @@
   repo: cc-icons/cc-icons
   branch: master
   directory: fonts/cc-icons-svg
+  provider: github
+
+- handle: cfpb
+  repo: cfpb/design-system
+  branch: main
+  directory: packages/cfpb-icons/src/icons
+  name: CFPB Design System
+  website: https://cfpb.github.io/design-system/
   provider: github
 
 - handle: cjpatoilo
@@ -99,6 +119,12 @@
   branch: master
   directory: dist/icons
   provider: github
+
+- handle: danmb
+  repo: DanMB/rl-svg-icons
+  branch: master
+  directory: ''
+  provider: gitlab
 
 - handle: daviddarnes
   repo: daviddarnes/mac-cursors
@@ -203,6 +229,12 @@
   directory: ''
   provider: github
 
+- handle: gillicons
+  repo: gillian.perard/gillicons
+  branch: master
+  directory: packages/gillicons/src/svgs
+  provider: gitlab
+
 # Needs complicated renames: https://github.com/google/material-design-icons
 # same? https://github.com/material-icons/material-icons/tree/master/svg
 
@@ -260,6 +292,12 @@
   branch: master
   directory: sources/SVG
   provider: github
+
+- handle: jcfields
+  repo: jcfields/svg-file-icons
+  branch: master
+  directory: ''
+  provider: gitlab
 
 - handle: jetbrains
   repo: JetBrains/icons
@@ -479,6 +517,12 @@
   directory: icons
   provider: github
 
+- handle: ubikbsd
+  repo: UbikBSD/FilezVectorIcons
+  branch: master
+  directory: dist/icons
+  provider: gitlab
+
 - handle: uditkumar489
   repo: uditkumar489/Icon-pack
   branch: master
@@ -506,6 +550,13 @@
   branch: master
   directory: icons/mdl2
   provider: github
+
+- handle: zavoloklom
+  repo: zavoloklom/material-design-iconic-font
+  branch: master
+  directory: svg
+  provider: github
+  name: Material Design Iconic Font
 
 - handle: zendeskgarden
   repo: zendeskgarden/svg-icons
