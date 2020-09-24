@@ -383,6 +383,14 @@
   website: https://ikonate.com/
   name: "Ikonate"
 
+- handle: mono-company
+  repo: mono-company/mono-icons
+  branch: master
+  directory: svg
+  provider: github
+  website: https://icons.mono.company/
+  name: "Mono Icons"
+
 - handle: nicodinh
   repo: nicodinh/kenney-icon-font/
   branch: develop
