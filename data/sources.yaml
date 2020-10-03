@@ -169,6 +169,22 @@
   directory: black/svg
   provider: github
 
+- handle: eos
+  repo: SUSE-UIUX/eos-icons
+  branch: master
+  directory: svg
+  provider: gitlab
+  website: https://icons.eosdesignsystem.com/
+  name: EOS Icons
+
+- handle: eos-animated
+  repo: SUSE-UIUX/eos-icons
+  branch: master
+  directory: animated-svg
+  provider: gitlab
+  website: https://icons.eosdesignsystem.com/
+  name: EOS Icons (animated)
+
 - handle: erikflowers
   repo: erikflowers/weather-icons
   branch: master
