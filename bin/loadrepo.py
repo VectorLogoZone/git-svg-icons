@@ -94,7 +94,7 @@ for repo_handle in args.repos:
 
         if args.verbose:
             sys.stdout.write("INFO: pulling changes from git repo %s\n" % giturl)
-        sh.git.pull("origin", repodata["branch"], _err_to_out=True, _out=sys.stdout)
+        sh.git.pull("--ff-only", "origin", repodata["branch"], _err_to_out=True, _out=sys.stdout)
         if args.verbose:
             sys.stdout.write("INFO: pull complete\n")
 
@@ -122,7 +122,7 @@ for repo_handle in args.repos:
                 fsc = open(".git/info/sparse-checkout", "a")
                 fsc.write("%s/*\n" % sparse_dir)
                 fsc.close()
-            sh.git.pull("--depth=1", "origin", repodata["branch"], _err_to_out=True, _out=sys.stdout)
+            sh.git.pull("--ff-only", "--depth=1", "origin", repodata["branch"], _err_to_out=True, _out=sys.stdout)
             if args.verbose:
                 sys.stdout.write("INFO: sparse pull complete\n")
         else:

@@ -25,10 +25,13 @@ jobs:
           pip install sh unidecode pyaml
 
       - name: Build Github Index
-        run: ./build-github.sh
+        run: ./bin/build-index.sh github
 
       - name: Build Gitlab Index
-        run: ./build-gitlab.sh
+        run: ./bin/build-index.sh gitlab
+
+      - name: Build AllIcons Download
+        run: ./bin/build-allicons.sh
 
       - run: echo "RELEASE_DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_ENV
       - run: echo "RELEASE_TAG=$(date -u +%Y%m%d-%H%M%S)" >> $GITHUB_ENV
@@ -67,4 +70,15 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           asset_path: ./build/sourceData-gitlab.tgz
           asset_name: sourceData-gitlab.tgz
+          asset_content_type: application/gzip
+
+      - name: Upload allicons .tgz
+        id: upload_allicons
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./build/allicons.tgz
+          asset_name: allicons.tgz
           asset_content_type: application/gzip

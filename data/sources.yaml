@@ -182,6 +182,7 @@
   directory: src
   provider: github
   name: Zondicons
+  website: https://www.zondicons.com/
 
 - handle: elegantcircles
   repo: dohliam/elegant-circles

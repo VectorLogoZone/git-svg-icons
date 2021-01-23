@@ -34,7 +34,6 @@ https://www.toicon.com/series
 - [ ] [Metrize](https://www.alessioatzeni.com/wp-content/cache/page_enhanced/www.alessioatzeni.com/metrize-icons/_index.html_gzip)
 - [ ] [Basicons](https://basicons.xyz/)
 - [ ] [ToIcon](https://www.toicon.com/)
-- [ ] [Zondicons](https://www.zondicons.com/icons.html)
 
 ## Tools
 - [souporserious/unicon](https://github.com/souporserious/unicon/tree/main/packages/unicon/src) - extract from figma/sketch
