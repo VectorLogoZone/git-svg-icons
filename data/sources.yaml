@@ -1,3 +1,15 @@
+- handle: actions
+  name: Github Actions Starter Workflows
+  repo: actions/starter-workflows
+  branch: main
+  directory: icons
+  provider: github
+
+- handle: pictogramas
+  provider: github
+  repo: adrianmg/pictogramas
+  branch: master
+  directory: SVG
 
 - handle: akveo
   repo: akveo/eva-icons
@@ -57,6 +69,14 @@
   branch: master
   directory: source/symbols
   provider: github
+
+- handle: iconpark
+  name: IconPark
+  provider: github
+  repo: bytedance/IconPark
+  branch: master
+  directory: source
+  website: https://iconpark.bytedance.com/
 
 - handle: carbon-design
   repo: carbon-design-system/carbon
@@ -163,6 +183,13 @@
   provider: github
   name: Zondicons
 
+- handle: elegantcircles
+  repo: dohliam/elegant-circles
+  branch: master
+  directory: svg
+  provider: github
+  website: https://dohliam.github.io/elegant-circles/
+
 - handle: encharm
   repo: encharm/Font-Awesome-SVG-PNG
   branch: master
@@ -210,12 +237,25 @@
   branch: master
   directory: icons
   provider: github
+  website: https://feathericons.com/
+
+- handle: financialtimes
+  provider: github
+  repo: Financial-Times/fticons
+  branch: master
+  directory: svg
 
 - handle: fontello
   repo: fontello/fontelico.font
   branch: master
   directory: src/svg
   provider: github
+
+- handle: framework7
+  provider: github.
+  repo: framework7io/framework7-icons
+  branch: master
+  directory: svg
 
 - handle: frexy
   repo: frexy/glyph-iconset
@@ -250,6 +290,14 @@
   branch: master
   directory: packages/gillicons/src/svgs
   provider: gitlab
+
+- handle: grommit
+  name: Grommit Icons
+  repo: grommet/grommet-icons
+  branch: master
+  directory: public/img
+  provider: github
+  website: github
 
 # Needs complicated renames: https://github.com/google/material-design-icons
 # same? https://github.com/material-icons/material-icons/tree/master/svg
@@ -309,6 +357,13 @@
   directory: sources/SVG
   provider: github
 
+- handle: sjjb
+  provider: github
+  repo: jalbertbowden/ssjb-map-icons
+  branch: master
+  directory: svg/svg
+  website: http://www.sjjb.co.uk/mapicons/
+
 - handle: jcfields
   repo: jcfields/svg-file-icons
   branch: master
@@ -350,6 +405,13 @@
   rename: "^wh-(.*)$"
   provider: github
 
+- handle: fontfabulous
+  provider: github
+  repo: ManageIQ/font-fabulous
+  branch: master
+  directory: assets/images/font-fabulous
+  website: https://www.manageiq.org/font-fabulous/
+
 - handle: manifestinteractive
   repo: manifestinteractive/weather-underground-icons
   branch: master
@@ -376,6 +438,13 @@
   provider: github
   website: https://jam-icons.com/
   name: "Jam Icons"
+
+- handle: fluentui
+  provider: github
+  repo: microsoft/fluentui-system-icons
+  rename: "^ic_fluent_(.*)$"
+  branch: master
+  directory: assets
 
 #- handle: microsoft-codicons
 #  repo: microsoft/vscode-codicons
@@ -432,6 +501,28 @@
   directory: svg
   provider: github
 
+- handle: phosphor
+  name: Phosphor Icons
+  repo: phosphor-icons/phosphor-icons
+  branch: master
+  directory: assets
+  provider: github
+  website: https://phosphoricons.com/
+
+- handle: phosphor-website
+  name: Phosphor Icons Website
+  repo: phosphor-icons/phosphor-home
+  branch: master
+  directory: src/assets
+  provider: github
+  website: https://phosphoricons.com/
+
+- handle: pivotal
+  provider: github
+  repo: pivotal-cf/pui-icons
+  branch: master
+  directory: src/icons
+
 - handle: pprince
   repo: pprince/etlinefont-bower
   branch: master
@@ -444,6 +535,12 @@
   directory: icons
   name: Octicons (Github Primer)
   provider: github
+
+- handle: radix
+  provider: github
+  repo: radix-ui/icons
+  branch: master
+  directory: packages/radix-icons/icons
 
 - handle: reduxframework
   repo: reduxframework/elusive-iconfont
@@ -559,6 +656,12 @@
   directory: assets/svg
   website: https://vaadin.com/components/vaadin-icons
   provider: github
+
+- handle: vivid
+  provider: github
+  repo: webkul/vivid
+  branch: master
+  directory: icons
 
 - handle: wordpress
   repo: WordPress/dashicons
