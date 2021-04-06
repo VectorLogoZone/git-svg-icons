@@ -80,7 +80,7 @@
 
 - handle: carbon-design
   repo: carbon-design-system/carbon
-  branch: master
+  branch: main
   directory: packages/icons/src/svg
   name: "Carbon Design Icons (IBM)"
   provider: github
