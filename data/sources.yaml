@@ -641,11 +641,12 @@
   directory: icons
   provider: github
 
-- handle: ubikbsd
-  repo: UbikBSD/FilezVectorIcons
-  branch: master
-  directory: dist/icons
-  provider: gitlab
+# NOTE: ubikbsd gone as of 2021-04-05
+#- handle: ubikbsd
+#  repo: UbikBSD/FilezVectorIcons
+#  branch: master
+#  directory: dist/icons
+#  provider: gitlab
 
 - handle: uditkumar489
   repo: uditkumar489/Icon-pack
