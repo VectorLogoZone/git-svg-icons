@@ -435,10 +435,11 @@
 - handle: michaelampr
   repo: michaelampr/jam
   branch: master
-  directory: svg
+  directory: icons
   provider: github
   website: https://jam-icons.com/
   name: "Jam Icons"
+  logo: https://jam-icons.com/logo.svg
 
 - handle: fluentui
   provider: github
@@ -456,7 +457,7 @@
 
 - handle: microsoft
   repo: microsoft/vscode-icons
-  branch: master
+  branch: main
   directory: icons
   provider: github
   name: "VSCode Icons (Microsoft)"
@@ -542,6 +543,7 @@
   repo: radix-ui/icons
   branch: master
   directory: packages/radix-icons/icons
+  website: https://icons.modulz.app/
 
 - handle: reduxframework
   repo: reduxframework/elusive-iconfont
