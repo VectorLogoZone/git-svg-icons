@@ -148,8 +148,8 @@
 
 - handle: daviddarnes
   repo: daviddarnes/mac-cursors
-  branch: master
-  directory: svg
+  branch: main
+  directory: src/svg
   provider: github
 
 - handle: davidmerfield
