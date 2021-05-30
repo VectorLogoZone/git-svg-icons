@@ -533,7 +533,7 @@
 
 - handle: primer
   repo: primer/octicons
-  branch: master
+  branch: main
   directory: icons
   name: Octicons (Github Primer)
   provider: github
