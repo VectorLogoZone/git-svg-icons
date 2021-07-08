@@ -421,7 +421,7 @@
 
 - handle: mapbox
   repo: mapbox/maki
-  branch: master
+  branch: main
   directory: icons
   # LATER: rename
   provider: github
