@@ -176,6 +176,12 @@
   directory: src/assets/24px
   provider: github
 
+- handle: dovy
+  repo: dovy/elusive-iconfont
+  branch: master
+  directory: dev/icons-svg
+  provider: github
+
 - handle: dukestreetstudio
   repo: dukestreetstudio/zondicons
   branch: master
@@ -190,12 +196,6 @@
   directory: svg
   provider: github
   website: https://dohliam.github.io/elegant-circles/
-
-- handle: encharm
-  repo: encharm/Font-Awesome-SVG-PNG
-  branch: master
-  directory: black/svg
-  provider: github
 
 - handle: eos
   repo: SUSE-UIUX/eos-icons
@@ -253,10 +253,10 @@
   provider: github
 
 - handle: framework7
-  provider: github.
+  provider: github
   repo: framework7io/framework7-icons
   branch: master
-  directory: svg
+  directory: src
 
 - handle: frexy
   repo: frexy/glyph-iconset
@@ -545,12 +545,6 @@
   directory: packages/radix-icons/icons
   website: https://icons.modulz.app/
 
-- handle: reduxframework
-  repo: reduxframework/elusive-iconfont
-  branch: master
-  directory: dev/icons-svg
-  provider: github
-
 - handle: remix-design
   repo: Remix-Design/RemixIcon
   branch: master
@@ -561,6 +555,12 @@
   repo: RRZE-PP/rrze-icon-set
   branch: master
   directory: ''
+  provider: github
+
+- handle: rush
+  repo: Rush/Font-Awesome-SVG-PNG
+  branch: master
+  directory: black/svg
   provider: github
 
 - handle: scottdejonge

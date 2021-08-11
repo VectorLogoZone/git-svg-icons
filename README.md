@@ -1,14 +1,23 @@
-# git repos of SVG icons [<img alt="git Logo" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" height="80" align="right" />](https://iconsear.ch/)
+# git repos of SVG images [<img alt="git Logo" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" height="80" align="right" />](https://logosear.ch/)
 
 [![build](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/release.yaml/badge.svg)](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/release.yaml)
+[![quality](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/quality.yaml/badge.svg)](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/quality.yaml)
+
+## Icons
 
 Public git repositories of SVG icons: this is the list used by [IconSear.ch](https://iconsear.ch/).
 
-## The List
-
 You can see a nicely formatted version of the list at [IconSear.ch](https://iconsear.ch/sources/index.html).
 
-The [raw list data](data/sources.yaml) is here in this repository.
+The [raw list data](data/icons.yaml) is here in this repository.
+
+## Logos
+
+Public git repositories of SVG logos: this is the list used by [LogoSear.ch](https://logosear.ch/).
+
+You can see a nicely formatted version of the list at [LogoSear.ch](https://logosear.ch/sources/index.html).
+
+The [raw list data](data/logos.yaml) is here in this repository.
 
 ## Contributing
 
@@ -28,7 +37,11 @@ The [raw list data](data/sources.yaml) is here in this repository.
 
 ## Running
 
+Generally:
+
 ```bash
 pip3 install sh unidecode pyaml
 bin/loadrepo.py
 ```
+
+For the specific parameters used in production, see the [Github Action](.github/workflows/release.yaml).

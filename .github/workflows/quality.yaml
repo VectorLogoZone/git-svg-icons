@@ -1,0 +1,35 @@
+name: quality
+
+on:
+  schedule:
+    - cron: '42 0 * * 1'
+  push:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  PYTHONUNBUFFERED: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Setup python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+
+      - name: Install python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install sh unidecode pyaml
+
+      - name: Validate icons  repos
+        run: ./bin/validate_repo.py --input=data/icons.yaml
+
+      - name: Validate logos repos
+        run: ./bin/validate_repo.py --input=data/logos.yaml
