@@ -34,6 +34,8 @@ OUTPUT_DIR=${OUTPUT_DIR:-${BASE_DIR}/output/${IMGTYPE}/${PROVIDER}}
 if [ ! -d "${OUTPUT_DIR}" ]; then
     echo "INFO: creating output directory ${OUTPUT_DIR}"
     mkdir -p "${OUTPUT_DIR}"
+else
+    echo "INFO: output to existing directory ${OUTPUT_DIR}"
 fi
 
 #
@@ -50,10 +52,12 @@ echo "INFO: loading logos into ${OUTPUT_DIR}"
 # to force it to copy even if no new commits, add:
 #    --always \
 
-BUILD_DIR=${BUILD_DIR:-${BASE_DIR}/build/${IMGTYPE}}
+BUILD_DIR=${BUILD_DIR:-${BASE_DIR}/build}
 if [ ! -d "${BUILD_DIR}" ]; then
     echo "INFO: creating build directory ${BUILD_DIR}"
     mkdir -p "${BUILD_DIR}"
+else
+    echo "INFO: building to existing directory ${BUILD_DIR}"
 fi
 
 #

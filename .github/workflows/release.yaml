@@ -62,8 +62,8 @@ jobs:
             build/index-logos-github.tgz
             build/index-logos-gitlab.tgz
           tag_name: ${{ env.RELEASE_TAG }}
-          release_name: Release ${{ env.RELEASE_DATE }}
+          name: Release ${{ env.RELEASE_DATE }}
           body: |
-            Automatically created on $(date)
+            Automatically created on ${{ env.RELEASE_DATE }}
           draft: false
           prerelease: false
