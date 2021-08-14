@@ -18,7 +18,6 @@ import unidecode
 import urllib.request
 import yaml
 
-
 #
 # Hack since urllib always follows redirects
 #
@@ -29,8 +28,6 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 opener = urllib.request.build_opener(NoRedirect)
 urllib.request.install_opener(opener)
-
-default_branch = "master"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-q", "--quiet", help="hide status messages", default=True, dest='verbose', action="store_false")
@@ -89,7 +86,7 @@ for repo_handle in args.repos:
         sys.stdout.write("INFO: url is %s\n" % (giturl))
 
     try:
-        response = urllib.request.urlopen(giturl) #, {}, {'User-Agent': 'VectorLogoZone (https://github.com/vectorlogozone/git-svg-logos)' })
+        response = urllib.request.urlopen(giturl) #, {}, {'User-Agent': 'VectorLogoZone (https://github.com/vectorlogozone/git-svg-icons)' })
         if response.status != 200:
             failCount += 1
             sys.stdout.write("FAILURE: %s (%d: %s)\n" % (repodata['repo'], response.status, giturl))
@@ -99,6 +96,8 @@ for repo_handle in args.repos:
     except urllib.error.HTTPError as e:
         failCount += 1
         sys.stdout.write("FAILURE: %s (%s: %s)\n" % (repodata['repo'], e.reason, giturl))
+
+    time.sleep(1)
 
 os.chdir(origdir)
 

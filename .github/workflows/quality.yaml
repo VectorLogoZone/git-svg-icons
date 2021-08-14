@@ -11,7 +11,7 @@ env:
   PYTHONUNBUFFERED: true
 
 jobs:
-  build:
+  quality:
     runs-on: ubuntu-latest
 
     steps:

@@ -45,3 +45,8 @@ bin/loadrepo.py
 ```
 
 For the specific parameters used in production, see the [Github Action](.github/workflows/release.yaml).
+
+## To Do
+
+- [ ] validate_repo: make sleep into an argument
+- [ ] validate_repo: support github auth to avoid "too many requests" when running from GHA
