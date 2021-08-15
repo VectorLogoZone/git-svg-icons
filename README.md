@@ -34,6 +34,7 @@ The [raw list data](data/logos.yaml) is here in this repository.
 [![Github](https://www.vectorlogo.zone/logos/github/github-ar21.svg)](https://github.com/ "Git Repositories")
 [![Gitlab](https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg)](https://about.gitlab.com/ "Git Repositories")
 [![Python](https://www.vectorlogo.zone/logos/python/python-ar21.svg)](https://www.python.org/ "data load script")
+[![YAML](https://www.vectorlogo.zone/logos/yaml/yaml-ar21.svg)](http://yaml.org/ "list storage")
 
 ## Running
 
@@ -49,4 +50,5 @@ For the specific parameters used in production, see the [Github Action](.github/
 ## To Do
 
 - [ ] validate_repo: make sleep into an argument
-- [ ] validate_repo: support github auth to avoid "too many requests" when running from GHA
+- [ ] validate_repo: support github auth to avoid "too many requests" when running from GHA without sleeping
+- [ ] release description should include the count of repos and images

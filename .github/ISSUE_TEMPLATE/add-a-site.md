@@ -1,6 +1,6 @@
 ---
 name: Add a site
-about: Suggest an git repo with svg icons that you would like us to add
+about: Suggest an git repo with svg images that you would like us to add
 title: ''
 labels: ''
 assignees: ''
