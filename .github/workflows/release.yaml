@@ -28,6 +28,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install sh unidecode pyaml
 
+      - name: Configure git
+        run: |
+          git config --global init.defaultBranch main
+
       - name: Build Github Icon Index
         run: ./bin/build-index.sh icons github
 
