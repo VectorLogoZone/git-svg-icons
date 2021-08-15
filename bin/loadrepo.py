@@ -39,7 +39,7 @@ if args.verbose:
     print("INFO: loadrepo starting at %s" % datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
 
 fdata = open(args.input, "r")
-rawdata = yaml.load(fdata)
+rawdata = yaml.safe_load(fdata)
 fdata.close()
 
 repolist = {}
