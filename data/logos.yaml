@@ -61,7 +61,7 @@
 - provider: github
   handle: automattic-social-logos
   repo: Automattic/social-logos
-  branch: master
+  branch: trunk
   directory: svg-min
   logo: https://www.vectorlogo.zone/logos/automattic/automattic-icon.svg
   website: https://automattic.github.io/social-logos/

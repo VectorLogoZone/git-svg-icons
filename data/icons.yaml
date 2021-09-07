@@ -53,7 +53,7 @@
 
 - handle: automattic
   repo: Automattic/gridicons
-  branch: master
+  branch: trunk
   directory: svg-min
   provider: github
   rename: "^gridicons-(.*)$"
