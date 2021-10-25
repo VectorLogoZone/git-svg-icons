@@ -383,10 +383,10 @@
 
 - provider: github
   handle: lipis
-  repo: lipis/flag-icon-css
-  branch: master
+  repo: lipis/flag-icons
+  branch: main
   directory: flags
-  website: 'http://flag-icon-css.lip.is/'
+  website: 'http://flagicons.lipis.dev/'
 
 - provider: github
   handle: font-logos
