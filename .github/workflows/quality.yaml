@@ -29,7 +29,7 @@ jobs:
           pip install sh unidecode pyaml
 
       - name: Validate icons  repos
-        run: ./bin/validate_repo.py --input=data/icons.yaml
+        run: ./bin/validate_repo.py --input=data/iconsearch.yaml
 
       - name: Validate logos repos
-        run: ./bin/validate_repo.py --input=data/logos.yaml
+        run: ./bin/validate_repo.py --input=data/logosearch.yaml
