@@ -14,6 +14,10 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        IDENTITY: [ iconsearch, logosearch, supertinyicons ]
 
     steps:
       - uses: actions/checkout@master
@@ -32,24 +36,22 @@ jobs:
         run: |
           git config --global init.defaultBranch main
 
-      - name: Build Github Icon Index
-        run: ./bin/build-index.sh icons github
+      - name: Build index for github repos
+        run: ./bin/build-index.sh ${{ matrix.IDENTITY }} github
 
-      - name: Build Gitlab Icon Index
-        run: ./bin/build-index.sh icons gitlab
+      - name: Build index for gitlab repos
+        if: ${{ matrix.IDENTITY != 'supertinyicons' }}
+        run: ./bin/build-index.sh ${{ matrix.IDENTITY }} gitlab
 
-      - name: Build Icons Download
-        run: ./bin/build-download.sh icons
+      - name: Build download file
+        if: ${{ matrix.IDENTITY != 'supertinyicons' }}
+        run: ./bin/build-download.sh ${{ matrix.IDENTITY }}
 
-      - name: Build Github Logo Index
-        run: ./bin/build-index.sh logos github
+  release:
+    needs: build
+    runs-on: ubuntu-latest
 
-      - name: Build Gitlab Logo Index
-        run: ./bin/build-index.sh logos gitlab
-
-      - name: Build Logos Download
-        run: ./bin/build-download.sh logos
-
+    steps:
       - name: Set release info
         run: |
           echo "RELEASE_DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_ENV
@@ -59,12 +61,13 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            build/download-icons.tgz
-            build/index-icons-github.tgz
-            build/index-icons-gitlab.tgz
-            build/download-logos.tgz
-            build/index-logos-github.tgz
-            build/index-logos-gitlab.tgz
+            build/download-iconsearch.tgz
+            build/index-iconsearch-github.tgz
+            build/index-iconsearch-gitlab.tgz
+            build/download-logosearch.tgz
+            build/index-logosearch-github.tgz
+            build/index-logosearch-gitlab.tgz
+            build/index-supertinyicons-github.tgz
           tag_name: ${{ env.RELEASE_TAG }}
           name: Release ${{ env.RELEASE_DATE }}
           body: |

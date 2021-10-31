@@ -1,0 +1,5 @@
+- provider: github
+  handle: super-tiny-icons
+  repo: edent/SuperTinyIcons
+  branch: master
+  directory: images/svg
