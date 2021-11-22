@@ -347,7 +347,7 @@
 
 - handle: ionic-team
   repo: ionic-team/ionicons
-  branch: master
+  branch: main
   directory: src/svg
   provider: github
   name: Ionicons
