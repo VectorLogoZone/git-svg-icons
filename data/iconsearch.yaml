@@ -226,6 +226,7 @@
   directory: assets/icons
   rename: "ei-(.*)$"
   provider: github
+  website: https://evil-icons.io/
 
 - handle: feathericon
   repo: feathericon/feathericon

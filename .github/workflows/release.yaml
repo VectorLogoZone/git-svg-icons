@@ -56,6 +56,8 @@ jobs:
             build/download-${{ matrix.IDENTITY }}.tgz
             build/index-${{ matrix.IDENTITY }}-github.tgz
             build/index-${{ matrix.IDENTITY }}-gitlab.tgz
+          retention-days: 1
+
 
   release:
     needs: build
