@@ -462,6 +462,7 @@
   directory: icons
   provider: github
   name: "VSCode Icons (Microsoft)"
+  logo: "https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg"
 
 - handle: mikolajdobrucki
   repo: mikolajdobrucki/ikonate
@@ -586,8 +587,9 @@
   repo: tabler/tabler-icons
   branch: master
   directory: icons
-  website: 'https://tablericons.com/'
+  website: 'https://tabler-icons.io/'
   provider: github
+  logo: 'https://www.vectorlogo.zone/logos/tablerio/tablerio-icon.svg'
 
 - handle: taigaio
   repo: taigaio/taiga-design

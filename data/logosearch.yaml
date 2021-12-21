@@ -587,8 +587,8 @@
 - provider: github
   handle: tabler
   repo: tabler/tabler
-  branch: master
-  directory: src/assets/images
+  branch: main
+  directory: src/img
   website: 'https://tabler.io/'
   logo: 'https://www.vectorlogo.zone/logos/tablerio/tablerio-icon.svg'
 
