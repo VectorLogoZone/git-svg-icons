@@ -5,6 +5,14 @@
   directory: icons
   provider: github
 
+- handle: adobe-spectrum
+  provider: github
+  repo: adobe/spectrum-css-workflow-icons
+  branch: main
+  directory: icons/workflow/24
+  website: https://spectrum.adobe.com/page/icons/
+  logo: https://spectrum.adobe.com/static/adobe_logo_spectrum_site.svg
+
 - handle: pictogramas
   provider: github
   repo: adrianmg/pictogramas
@@ -25,6 +33,12 @@
   directory: svg
   provider: gitlab
 
+- handle: dripicons
+  provider: github
+  repo: amitjakhu/dripicons
+  branch: master
+  directory: SVG
+
 - handle: andreasbm
   repo: andreasbm/web-skills
   branch: master
@@ -37,6 +51,13 @@
   directory: packages/icons-svg/svg
   provider: github
 
+- handle: akar
+  provider: github
+  repo: artcoholic/akar-icons-app
+  branch: main
+  directory: src/svg
+  website: https://akaricons.com/
+
 - handle: astrit
   repo: astrit/css.gg
   branch: master
@@ -48,7 +69,7 @@
   branch: master
   directory: svg
   name: BoxIcons
-  rename: "^bx[sil]-(.*)$"
+  rename: [ "^bx[sil]-(.*)$", "\\1" ]
   provider: github
 
 - handle: automattic
@@ -56,13 +77,20 @@
   branch: trunk
   directory: svg-min
   provider: github
-  rename: "^gridicons-(.*)$"
+  rename: [ "^gridicons-(.*)$", "\\1" ]
 
 - handle: axiansdeveloper
   repo: axiansdeveloper/networking-icons
   branch: master
   directory: ''
   provider: gitlab
+
+- handle: banno
+  provider: github
+  repo: Banno/jha-design
+  branch: master
+  directory: src/icons
+  website: https://jackhenry.design/
 
 - handle: bpmn-io
   repo: bpmn-io/bpmn-font
@@ -76,7 +104,7 @@
   repo: bytedance/IconPark
   branch: master
   directory: source
-  website: https://iconpark.bytedance.com/
+  website: https://iconpark.oceanengine.com/home
 
 - handle: carbon-design
   repo: carbon-design-system/carbon
@@ -217,14 +245,14 @@
   repo: erikflowers/weather-icons
   branch: master
   directory: svg
-  rename: "^wi-(.*)$"
+  rename: [ "^wi-(.*)$", "\\1" ]
   provider: github
 
 - handle: evilicons
   repo: evil-icons/evil-icons
   branch: master
   directory: assets/icons
-  rename: "ei-(.*)$"
+  rename: [ "ei-(.*)$", "\\1" ]
   provider: github
   website: https://evil-icons.io/
 
@@ -263,7 +291,7 @@
   repo: frexy/glyph-iconset
   branch: master
   directory: svg
-  rename: "^si-glyph-(.*)$"
+  rename: [ "^si-glyph-(.*)$", "\\1" ]
   provider: github
 
 - handle: game-icons
@@ -300,6 +328,12 @@
   directory: public/img
   provider: github
   website: github
+
+- handle: crypto
+  provider: github
+  repo: guardaco/crypto-icons
+  branch: master
+  directory: icons
 
 # Needs complicated renames: https://github.com/google/material-design-icons
 # same? https://github.com/material-icons/material-icons/tree/master/svg
@@ -388,7 +422,7 @@
   repo: Keyamoon/IcoMoon-Free
   branch: master
   directory: SVG
-  rename: "^[0-9]{3}-(.*)$"
+  rename: ["^[0-9]{3}-(.*)$", "\\1" ]
   provider: github
   name: IcoMoon
 
@@ -404,8 +438,14 @@
   repo: lucijanblagonic/Washicons
   branch: master
   directory: svg
-  rename: "^wh-(.*)$"
+  rename: [ "^wh-(.*)$", "\\1" ]
   provider: github
+
+- handle: delft
+  provider: github
+  repo: madmaxms/iconpack-delft
+  branch: master
+  directory: Delft/apps/96
 
 - handle: fontfabulous
   provider: github
@@ -427,6 +467,13 @@
   # LATER: rename
   provider: github
 
+- handle: hola
+  provider: github
+  repo: marianabeldi/holasvg-icons
+  branch: main
+  directory: icons
+  website: https://holasvg.com/icons/
+
 - handle: mariuszostrowski
   repo: mariuszostrowski/subway
   branch: master
@@ -445,9 +492,16 @@
 - handle: fluentui
   provider: github
   repo: microsoft/fluentui-system-icons
-  rename: "^ic_fluent_(.*)$"
+  rename: [ "^ic_fluent_(.*)$", "\\1" ]
   branch: master
   directory: assets
+
+- handle: iconoir
+  provider: github
+  repo: lucaburgio/iconoir/
+  branch: master
+  directory: icons
+  website: https://iconoir.com/
 
 #- handle: microsoft-codicons
 #  repo: microsoft/vscode-codicons
@@ -472,6 +526,12 @@
   website: https://ikonate.com/
   name: "Ikonate"
 
+- handle: moneytree
+  provider: github
+  repo: moneytree/mt-web-icons
+  branch: master
+  directory: svgs
+
 - handle: mono-company
   repo: mono-company/mono-icons
   branch: master
@@ -480,8 +540,14 @@
   website: https://icons.mono.company/
   name: "Mono Icons"
 
+- handle: mysticsymbolic
+  provider: github
+  repo: mysticsymbolic/mysticsymbolic.github.io
+  branch: main
+  directory: assets/symbols
+
 - handle: nicodinh
-  repo: nicodinh/kenney-icon-font/
+  repo: nicodinh/kenney-icon-font
   branch: develop
   directory: svgs
   notes: has some invalid SVGs
@@ -493,17 +559,39 @@
   directory: ''
   provider: github
 
+- handle: cc-icons
+  provider: github
+  repo: openwebicons/cc-icons
+  branch: gh-pages
+  directory: svg
+  website: http://openwebicons.github.io/cc-icons/
+
 - handle: optimizely
   repo: optimizely/react-oui-icons
   branch: master
   directory: assets/svgs
   provider: github
 
+- handle: blueprint
+  provider: github
+  repo: palantir/blueprint
+  branch: develop
+  directory: resources/icons/20px
+  website: https://blueprintjs.com/
+  logo: https://www.vectorlogo.zone/logos/blueprintjs/blueprintjs-icon.svg
+
 - handle: paomedia
   repo: paomedia/small-n-flat
   branch: master
   directory: svg
   provider: github
+
+- handle: papirus
+  provider: github
+  repo: PapirusDevelopmentTeam/papirus-icon-theme
+  branch: master
+  directory: Papirus/symbolic
+  rename:  [ "^(.*)-symbolic.svg$", "\\1.svg" ]
 
 - handle: phosphor
   name: Phosphor Icons
@@ -552,6 +640,14 @@
   branch: master
   directory: icons
   provider: github
+  website: https://remixicon.com/
+
+- handle: healthicons
+  provider: github
+  repo: resolvetosavelives/healthicons
+  branch: main
+  directory: public/icons/svg
+  website: https://healthicons.org/
 
 - handle: rrzepp
   repo: RRZE-PP/rrze-icon-set
@@ -570,6 +666,12 @@
   branch: master
   directory: src/icons
   provider: github
+
+- handle: faenza
+  provider: github
+  repo: shlinux/faenza-icon-theme
+  branch: master
+  directory: Faenza/apps/scalable
 
 - handle: somerandomdude
   repo: somerandomdude/Iconic
@@ -632,11 +734,38 @@
   directory: WindowsPhone/svg
   provider: github
 
+- handle: hawcons
+  provider: github
+  repo: thecreation/standard-icons
+  branch: master
+  directory: customs/Hawcons
+  website: https://hawcons.com/
+
+- handle: gonzocons
+  provider: github
+  repo: thecreation/standard-icons
+  branch: master
+  directory: 'customs/gonzocons/SVGs 2.0'
+  website: https://www.gonzodesign.nl/gonzocons/
+
+- handle: themify
+  provider: github
+  repo: thecreation/standard-icons
+  branch: master
+  directory: customs/themify-icons/SVG
+  website: https://themify.me/themify-icons
+
 - handle: topcoat
   repo: topcoat/icons
   branch: master
   directory: svg
   provider: github
+
+- handle: laundry-symbols
+  provider: github
+  repo: tvler/laundry-symbols
+  branch: master
+  directory: symbols
 
 - handle: twbs
   repo: twbs/icons
@@ -664,11 +793,30 @@
   website: https://vaadin.com/components/vaadin-icons
   provider: github
 
+- handle: fluent-theme
+  provider: github
+  repo: vinceliuice/Fluent-icon-theme
+  branch: master
+  directory: src/scalable
+
+- handle: viniciusglinden
+  provider: gitlab
+  repo: viniciusglinden/random-icons
+  branch: master
+  directory: ''
+
 - handle: vivid
   provider: github
   repo: webkul/vivid
   branch: master
   directory: icons
+
+- handle: clarity
+  provider: github
+  repo: vmware/clarity-assets
+  branch: master
+  directory: icons
+  website: https://clarity.design/foundation/icons/
 
 - handle: wordpress
   repo: WordPress/dashicons
@@ -702,6 +850,6 @@
   repo: zurb/foundation-icon-fonts
   branch: master
   directory: svgs
-  rename: "^fi-(.*)$"
+  rename: [ "^fi-(.*)$", "\\1" ]
   provider: github
   name: Foundation (Zurb)

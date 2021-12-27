@@ -67,6 +67,13 @@
   website: https://automattic.github.io/social-logos/
 
 - provider: github
+  handle: badgen
+  repo: badgen/badgen-icons
+  branch: master
+  directory: icons
+  website: https://badgen.net/
+
+- provider: github
   handle: shieldsio
   repo: badges/shields
   branch: master
