@@ -154,6 +154,13 @@
   website: 'https://systemuicons.com/'
   provider: github
 
+- provider: github
+  handle: pepicons
+  repo: CyCraft/pepicons
+  branch: dev
+  directory: packages/pepicons/svg
+  website: https://pepicons.com/
+
 - handle: danielbruce
   repo: danielbruce/entypo
   branch: master
@@ -191,6 +198,12 @@
   branch: master
   directory: svg
   provider: github
+
+- handle: devui
+  provider: github
+  repo: DevCloudFE/devui-icons
+  branch: master
+  directory: icomoon/svg
 
 - handle: developmentseed
   repo: developmentseed/collecticons-lib
@@ -712,6 +725,7 @@
   branch: master
   directory: src
   provider: github
+  website: https://teenyicons.com/
 
 - handle: templarian
   repo: Templarian/MaterialDesign
