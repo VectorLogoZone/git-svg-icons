@@ -233,6 +233,13 @@
   directory: svg
 
 - provider: github
+  handle: geticon
+  repo: get-icon/geticon
+  branch: master
+  directory: icons
+  logo: https://raw.githubusercontent.com/get-icon/geticon/master/geticon-logo/geticon-icon.svg
+
+- provider: github
   handle: getoutreach
   repo: getoutreach/stacked
   branch: master
@@ -254,6 +261,14 @@
   directory: images/SVG
   website: 'https://haeckdesign.com/freebies/icons/get-social-icon-set'
   logo: 'https://www.vectorlogo.zone/logos/haeckdesign/haeckdesign-icon.svg'
+
+- provider: github
+  handle: circleflags
+  repo: HatScripts/circle-flags
+  branch: gh-pages
+  directory: flags
+  website: https://hatscripts.github.io/circle-flags/
+  logo: https://hatscripts.github.io/circle-flags/logo.svg
 
 - provider: github
   handle: simple-svg-brand-logos
@@ -307,6 +322,12 @@
   website: 'https://teamcolors.jim-nielsen.com/'
   name: 'TeamColors'
   LATER-logo: ''
+
+- provider: github
+  handle: lacapitaine
+  repo: keeferrourke/la-capitaine-icon-theme
+  branch: master
+  directory: apps/scalable
 
 - provider: github
   handle: kilobyte

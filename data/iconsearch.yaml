@@ -352,10 +352,18 @@
 # same? https://github.com/material-icons/material-icons/tree/master/svg
 
 - handle: halfmage
-  repo: halfmage/raster
+  repo: halfmage/pixelarticons
   branch: master
-  directory: icons
+  directory: svg
   provider: github
+  website: https://pixelarticons.com/
+
+- handle: halfmage
+  repo: halfmage/majesticons
+  branch: main
+  directory: ''
+  provider: github
+  website: https://www.majesticons.com/
 
 - handle: icons8-line
   repo: icons8/line-awesome
