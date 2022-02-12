@@ -488,13 +488,6 @@
   # LATER: rename
   provider: github
 
-- handle: hola
-  provider: github
-  repo: marianabeldi/holasvg-icons
-  branch: main
-  directory: icons
-  website: https://holasvg.com/icons/
-
 - handle: mariuszostrowski
   repo: mariuszostrowski/subway
   branch: master
