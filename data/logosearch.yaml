@@ -33,7 +33,7 @@
 
 - provider: github
   handle: wappalyzer
-  repo: AliasIO/Wappalyzer
+  repo: wappalyzer/wappalyzer
   branch: master
   directory: src/drivers/webextension/images/icons
   website: 'https://www.wappalyzer.com/'

@@ -9,7 +9,7 @@
   provider: github
   repo: adobe/spectrum-css-workflow-icons
   branch: main
-  directory: icons/workflow/24
+  directory: dist/spectrum-css-workflow-icons/24
   website: https://spectrum.adobe.com/page/icons/
   logo: https://spectrum.adobe.com/static/adobe_logo_spectrum_site.svg
 
@@ -625,7 +625,7 @@
 
 - handle: pivotal
   provider: github
-  repo: pivotal-cf/pui-icons
+  repo: vmware-archive/pui-icons
   branch: master
   directory: src/icons
 
@@ -850,7 +850,7 @@
 
 - handle: zavoloklom
   repo: zavoloklom/material-design-iconic-font
-  branch: master
+  branch: main
   directory: svg
   provider: github
   name: Material Design Iconic Font
