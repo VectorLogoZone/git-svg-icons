@@ -9,7 +9,7 @@ Public git repositories of SVG icons: this is the list used by [IconSear.ch](htt
 
 You can see a nicely formatted version of the list at [IconSear.ch](https://iconsear.ch/sources/index.html).
 
-The [raw list data](data/icons.yaml) is here in this repository.
+The [raw list data](data/iconsearch.yaml) is here in this repository.
 
 ## Logos
 
@@ -17,7 +17,7 @@ Public git repositories of SVG logos: this is the list used by [LogoSear.ch](htt
 
 You can see a nicely formatted version of the list at [LogoSear.ch](https://logosear.ch/sources/index.html).
 
-The [raw list data](data/logos.yaml) is here in this repository.
+The [raw list data](data/logosearch.yaml) is here in this repository.
 
 ## Contributing
 
