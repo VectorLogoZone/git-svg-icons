@@ -82,7 +82,7 @@ for repo_handle in args.repos:
     if repodata['provider'] == 'github':
         giturl = "https://github.com/" + repodata['repo']
     elif repodata['provider'] == 'gitlab':
-        giturl = "https://gitlab.com/" + repodata['repo'] + ".git/"
+        giturl = "https://gitlab.com/" + repodata['repo'] + "/-"
     else:
         sys.stderr.write("ERROR: unknown or missing provider '%s'\n" % repodata['provider'])
         sys.exit(3)
