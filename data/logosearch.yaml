@@ -5,8 +5,8 @@
   directory: ''
 
 - provider: github
-  handle: abranhe
-  repo: abranhe/programming-languages-logos
+  handle: abrahamcalf
+  repo: abrahamcalf/programming-languages-logos
   branch: master
   directory: src
 
