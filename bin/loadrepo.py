@@ -82,7 +82,7 @@ for repo_handle in args.repos:
     if repodata['provider'] == 'github':
         giturl = "https://github.com/" + repodata['repo']
     elif repodata['provider'] == 'gitlab':
-        giturl = "https://gitlab.com/" + repodata['repo'] + "/-"
+        giturl = "https://gitlab.com/" + repodata['repo'] + ".git/"
     else:
         sys.stderr.write("ERROR: unknown or missing provider '%s'\n" % repodata['provider'])
         sys.exit(3)
@@ -223,11 +223,16 @@ for repo_handle in args.repos:
         elif repodata['provider'] == 'github':
             imgurl = "https://raw.githubusercontent.com/" + repodata["repo"] + "/" + repodata["branch"] + srcpath[len(gitdir):]
         elif repodata['provider'] == 'gitlab':
-            imgurl = "https://gitlab.svg.zone/" + repodata["repo"] + "/raw/" + repodata["branch"] + srcpath[len(gitdir):]
+            imgurl = "https://gitlab.svg.zone/" + repodata["repo"] + "/raw/" + repodata["branch"] + urllib.parse.quote(srcpath[len(gitdir):])
+
+        if repodata['provider'] == 'github':
+            srcurl = giturl + "/blob/" + repodata['branch'] + srcpath[len(gitdir):]
+        elif repodata['provider'] == 'gitlab':
+            srcurl = "https://gitlab.com/" + repodata['repo'] + "/-/blob/" + repodata['branch'] + urllib.parse.quote(srcpath[len(gitdir):])
 
         images.append({
             'name': name,
-            'src': giturl + "/blob/" + repodata['branch'] + srcpath[len(gitdir):],
+            'src': srcurl,
             'img': imgurl
             })
 
