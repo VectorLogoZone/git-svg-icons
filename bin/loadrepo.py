@@ -15,6 +15,7 @@ import sys
 import tempfile
 import time
 import unidecode
+import urllib
 import yaml
 
 default_branch = "master"
