@@ -1,5 +1,6 @@
 *~
 *.amp.html
+build/
 cache/
 .cache
 *.class
@@ -12,6 +13,7 @@ dist/
 .jekyll-metadata
 local/
 node_modules/
+output/
 *.pyc
 remote/
 .sass-cache/
