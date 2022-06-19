@@ -9,7 +9,15 @@
   provider: github
   repo: adobe/spectrum-css-workflow-icons
   branch: main
-  directory: dist/spectrum-css-workflow-icons/24
+  directory: dist/spectrum-css-workflow-icons/dist/24
+  website: https://spectrum.adobe.com/page/icons/
+  logo: https://spectrum.adobe.com/static/adobe_logo_spectrum_site.svg
+
+- handle: adobe-spectrum-color
+  provider: github
+  repo: adobe/spectrum-css-workflow-icons
+  branch: main
+  directory: dist/spectrum-css-workflow-icons/dist/color/24
   website: https://spectrum.adobe.com/page/icons/
   logo: https://spectrum.adobe.com/static/adobe_logo_spectrum_site.svg
 
