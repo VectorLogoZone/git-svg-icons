@@ -157,7 +157,7 @@
 
 - handle: CoreyGinnivan
   repo: CoreyGinnivan/system-uicons
-  branch: master
+  branch: main
   directory: src/images/icons
   website: 'https://systemuicons.com/'
   provider: github
@@ -520,8 +520,8 @@
 
 - handle: iconoir
   provider: github
-  repo: lucaburgio/iconoir/
-  branch: master
+  repo: iconoir-icons/iconoir
+  branch: main
   directory: icons
   website: https://iconoir.com/
 
