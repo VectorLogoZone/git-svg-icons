@@ -1,0 +1,2 @@
+to find file names that aren't valid:
+find . | grep -v "^[-/.a-z0-9]*$" | grep -v sourceData
