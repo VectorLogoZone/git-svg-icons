@@ -511,6 +511,14 @@
   name: "Jam Icons"
   logo: https://jam-icons.com/logo.svg
 
+- handle: microns
+  repo: stephenhutchings/microns
+  branch: master
+  directory: svg
+  provider: github
+  name: Microns
+  website: https://www.s-ings.com/projects/microns-icon-font/
+
 - handle: fluentui
   provider: github
   repo: microsoft/fluentui-system-icons
