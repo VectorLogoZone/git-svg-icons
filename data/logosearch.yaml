@@ -33,8 +33,8 @@
 
 - provider: github
   handle: wappalyzer
-  repo: wappalyzer/wappalyzer
-  branch: master
+  repo: dochne/wappalyzer
+  branch: main
   directory: src/drivers/webextension/images/icons
   website: 'https://www.wappalyzer.com/'
   logo: 'https://www.vectorlogo.zone/logos/wappalyzer/wappalyzer-icon.svg'
@@ -84,9 +84,9 @@
 
 - provider: github
   handle: bestofjs
-  repo: bestofjs/bestofjs-webui
+  repo: bestofjs/bestofjs
   branch: master
-  directory: public/logos
+  directory: apps/bestofjs-nextjs/public/logos
   website: 'https://bestofjs.org/'
 #logo
 
@@ -126,6 +126,14 @@
   directory: icons
   website: https://coinranking.com/
   logo: 'https://www.vectorlogo.zone/logos/coinranking/coinranking-icon.svg'
+
+- provider: github
+  handle: coreui
+  repo: coreui/coreui-icons
+  branch: v2
+  directory: svg/brand
+  name: "CoreUI Icons"
+  website: https://coreui.io/icons/
 
 - provider: github
   handle: cr0ybot
@@ -248,7 +256,7 @@
 - provider: github
   handle: svgporn
   repo: gilbarbara/logos
-  branch: master
+  branch: main
   directory: logos
   website: 'https://www.svgporn.com/'
   logo: 'https://www.vectorlogo.zone/logos/svgporn/svgporn-icon.svg'

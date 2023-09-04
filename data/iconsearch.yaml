@@ -143,17 +143,17 @@
 
 - handle: cjpatoilo
   repo: cjpatoilo/linearicons
-  branch: master
+  branch: main
   directory: dist/svg
   provider: github
 
 - handle: coreui
   repo: coreui/coreui-icons
-  branch: master
+  branch: v2
   directory: svg/free
   provider: github
   name: "CoreUI Icons"
-  website: https://icons.coreui.io/icons/
+  website: https://coreui.io/icons/
 
 - handle: CoreyGinnivan
   repo: CoreyGinnivan/system-uicons
@@ -285,7 +285,7 @@
 
 - handle: feathericons
   repo: feathericons/feather
-  branch: master
+  branch: main
   directory: icons
   provider: github
   website: https://feathericons.com/
@@ -625,15 +625,15 @@
 
 - handle: phosphor
   name: Phosphor Icons
-  repo: phosphor-icons/phosphor-icons
-  branch: master
+  repo: phosphor-icons/core
+  branch: main
   directory: assets
   provider: github
   website: https://phosphoricons.com/
 
 - handle: phosphor-website
   name: Phosphor Icons Website
-  repo: phosphor-icons/phosphor-home
+  repo: phosphor-icons/homepage
   branch: master
   directory: src/assets
   provider: github
@@ -724,7 +724,7 @@
   logo: 'https://www.vectorlogo.zone/logos/tablerio/tablerio-icon.svg'
 
 - handle: taigaio
-  repo: taigaio/taiga-design
+  repo: kaleidos-ventures/taiga-design
   branch: master
   directory: icons
   provider: github
@@ -753,9 +753,9 @@
   website: http://materialdesignicons.com/
 
 - handle: templarian-light
-  repo: Templarian/MaterialDesignLight
+  repo: Pictogrammers/MaterialDesignLight
   branch: master
-  directory: icons/svg
+  directory: svg
   name: Material Design Light
   provider: github
 
