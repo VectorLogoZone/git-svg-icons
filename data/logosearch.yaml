@@ -47,7 +47,7 @@
 
 - provider: github
   handle: azure-vector-icons
-  repo: amido/azure-vector-icons
+  repo: Ensono/azure-vector-icons
   branch: master
   directory: icons
 
