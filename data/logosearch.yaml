@@ -106,7 +106,7 @@
 - provider: github
   handle: cncf-artwork
   repo: cncf/artwork
-  branch: master
+  branch: main
   directory: ''
   logo: https://www.vectorlogo.zone/logos/cncfio/cncfio-icon.svg
   website: 'https://www.cncf.io/'

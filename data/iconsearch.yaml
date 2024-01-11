@@ -430,10 +430,10 @@
   website: http://www.sjjb.co.uk/mapicons/
 
 - handle: jcfields
-  repo: jcfields/svg-file-icons
+  repo: jcfieldsdev/svg-file-icons
   branch: master
   directory: ''
-  provider: gitlab
+  provider: github
 
 - handle: jetbrains
   repo: JetBrains/icons
