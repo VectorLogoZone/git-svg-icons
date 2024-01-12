@@ -5,8 +5,8 @@
   directory: ''
 
 - provider: github
-  handle: abrahamcalf
-  repo: abrahamcalf/programming-languages-logos
+  handle: abranhe
+  repo: abranhe/programming-languages-logos
   branch: master
   directory: src
 
@@ -325,7 +325,7 @@
 - provider: github
   handle: jimniels
   repo: jimniels/teamcolors
-  branch: master
+  branch: main
   directory: public/img
   website: 'https://teamcolors.jim-nielsen.com/'
   name: 'TeamColors'
@@ -456,8 +456,8 @@
   directory: max-artwork-icon-maxtoon/maxtoon/scalable/apps
 
 - provider: github
-  handle: maxogden
-  repo: maxogden/hexbin
+  handle: max-mapper
+  repo: max-mapper/hexbin
   branch: gh-pages
   directory: vector
   website: 'http://hexb.in/'
