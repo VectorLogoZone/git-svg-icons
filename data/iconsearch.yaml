@@ -102,7 +102,7 @@
 
 - handle: bpmn-io
   repo: bpmn-io/bpmn-font
-  branch: master
+  branch: main
   directory: source/symbols
   provider: github
 
