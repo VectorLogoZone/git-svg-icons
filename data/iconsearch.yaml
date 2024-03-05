@@ -595,6 +595,7 @@
   branch: gh-pages
   directory: svg
   website: http://openwebicons.github.io/cc-icons/
+  name: "CC-Icons"
 
 - handle: optimizely
   repo: optimizely/react-oui-icons
@@ -622,6 +623,14 @@
   branch: master
   directory: Papirus/symbolic
   rename:  [ "^(.*)-symbolic.svg$", "\\1.svg" ]
+
+- handle: pfefferle
+  provider: github
+  repo: pfefferle/openwebicons
+  branch: main
+  directory: svg
+  website: https://pfefferle.dev/openwebicons/
+  name: 'OpenWeb Icons (font)'
 
 - handle: phosphor
   name: Phosphor Icons
@@ -855,6 +864,33 @@
   directory: sources/svg
   provider: github
   name: DashIcons (WordPress)
+
+- handle: workday-accent
+  repo: AmazingLogos/workday-icons
+  branch: main
+  directory: docs/images/accent
+  provider: github
+  name: Workday Accent Icons
+  logo: https://www.vectorlogo.zone/logos/workday/workday-icon.svg
+  website: https://www.npmjs.com/package/@workday/canvas-accent-icons-web
+
+- handle: workday-applet
+  repo: AmazingLogos/workday-icons
+  branch: main
+  directory: docs/images/applet
+  provider: github
+  name: Workday Applet Icons
+  logo: https://www.vectorlogo.zone/logos/workday/workday-icon.svg
+  website: https://www.npmjs.com/package/@workday/canvas-applet-icons-web
+
+- handle: workday-system
+  repo: AmazingLogos/workday-icons
+  branch: main
+  directory: docs/images/system
+  provider: github
+  name: Workday System Icons
+  logo: https://www.vectorlogo.zone/logos/workday/workday-icon.svg
+  website: https://www.npmjs.com/package/@workday/canvas-system-icons-web
 
 # collections: https://github.com/Xaviju/inkscape-open-symbols
 

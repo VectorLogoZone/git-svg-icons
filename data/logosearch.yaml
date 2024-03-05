@@ -71,7 +71,7 @@
   repo: badgen/badgen-icons
   branch: master
   directory: icons
-  website: https://badgen.net/
+  website: 'https://badgen.net/'
 
 - provider: github
   handle: shieldsio
@@ -81,6 +81,13 @@
   website: 'https://shields.io/'
   name: 'Shields.IO'
   logo: 'https://www.vectorlogo.zone/logos/shieldsio/shieldsio-icon.svg'
+
+- provider: github
+  handle: azure-icon-collection
+  repo: benc-uk/icon-collection
+  branch: master
+  directory: ''
+  website: 'http://code.benco.io/icon-collection/azure-icons/'
 
 - provider: github
   handle: bestofjs
@@ -263,6 +270,15 @@
   name: 'SVGPorn'
 
 - provider: github
+  handle: google-cloud
+  repo: AwesomeLogos/google-cloud-icons
+  branch: main
+  directory: docs/images
+  website: 'https://cloud.google.com/icons'
+  logo: 'https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg'
+  name: 'Google Cloud Icons'
+
+- provider: github
   handle: haeckdesign
   repo: HaeckDesign/Get-Social-Social-Media-Font
   branch: master
@@ -425,6 +441,12 @@
   website: 'http://flagicons.lipis.dev/'
 
 - provider: github
+  handle: homelab
+  repo: loganmarchione/homelab-svg-assets
+  branch: main
+  directory: assets
+
+- provider: github
   handle: font-logos
   repo: lukas-w/font-logos
   branch: master
@@ -491,6 +513,13 @@
   branch: master
   directory: ''
 
+- provider: github
+  handle: nerd-fonts
+  repo: ryanoasis/nerd-fonts
+  branch: master
+  directory: src/svgs
+  website: https://nerdfonts.com/
+
 - provider: gitlab
   handle: omniait
   repo: omniait/developer-logos
@@ -502,6 +531,13 @@
   repo: openwebicons/cc-icons
   branch: gh-pages
   directory: svg
+
+- provider: github
+  handle: papirus
+  repo: PapirusDevelopmentTeam/papirus-icon-theme
+  branch: master
+  directory: Papirus/64x64/apps
+  name: 'Papirus Icon Theme'
 
 - provider: github
   handle: parcel
@@ -518,6 +554,14 @@
   website: 'https://nigerialogos.com/'
   logo: 'https://nigerialogos.com/logos/paystack/paystack.svg'
   name: NigeriaLogos
+
+- provider: github
+  handle: pheralb
+  repo: pheralb/svgl
+  branch: main
+  directory: static/library
+  website: https://svgl.app/
+  logo: 'https://svgl.app/images/logo.svg'
 
 - provider: gitlab
   handle: prismbreak
@@ -695,6 +739,13 @@
   directory: build-source/logos
 
 - provider: github
+  handle: vinceliuice
+  repo: vinceliuice/Fluent-icon-theme
+  branch: master
+  directory: src/scalable/apps
+  name: 'Fluent Icon Theme'
+
+- provider: github
   handle: vorillaz
   repo: vorillaz/devicons
   branch: master
@@ -706,6 +757,13 @@
   repo: vscode-icons/vscode-icons
   branch: master
   directory: icons
+
+- provider: github
+  handle: astro-build
+  repo: withastro/docs
+  branch: main
+  directory: public/logos
+  website: 'https://docs.astro.build/'
 
 - provider: gitlab
   handle: channel-logos
