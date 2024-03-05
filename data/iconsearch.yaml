@@ -87,6 +87,14 @@
   provider: github
   rename: [ "^gridicons-(.*)$", "\\1" ]
 
+- handle: aws-icons
+  provider: github
+  repo: AwesomeLogos/aws-icons
+  branch: main
+  directory: docs/images
+  name: "AWS Architecture Icons"
+  logos: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"
+
 - handle: axiansdeveloper
   repo: axiansdeveloper/networking-icons
   branch: master
