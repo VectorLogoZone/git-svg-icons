@@ -316,8 +316,8 @@
   branch: master
   directory: src
 
-- handle: frexy
-  repo: frexy/glyph-iconset
+- handle: chutichhuy
+  repo: chutichhuy/glyph-iconset
   branch: master
   directory: svg
   rename: [ "^si-glyph-(.*)$", "\\1" ]
@@ -734,7 +734,7 @@
 
 - handle: tabler
   repo: tabler/tabler-icons
-  branch: master
+  branch: main
   directory: icons
   website: 'https://tabler-icons.io/'
   provider: github
@@ -874,7 +874,7 @@
   name: DashIcons (WordPress)
 
 - handle: workday-accent
-  repo: AmazingLogos/workday-icons
+  repo: AwesomeLogos/workday-icons
   branch: main
   directory: docs/images/accent
   provider: github
@@ -883,7 +883,7 @@
   website: https://www.npmjs.com/package/@workday/canvas-accent-icons-web
 
 - handle: workday-applet
-  repo: AmazingLogos/workday-icons
+  repo: AwesomeLogos/workday-icons
   branch: main
   directory: docs/images/applet
   provider: github
@@ -892,7 +892,7 @@
   website: https://www.npmjs.com/package/@workday/canvas-applet-icons-web
 
 - handle: workday-system
-  repo: AmazingLogos/workday-icons
+  repo: AwesomeLogos/workday-icons
   branch: main
   directory: docs/images/system
   provider: github
