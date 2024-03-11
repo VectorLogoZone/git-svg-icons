@@ -861,7 +861,7 @@
 
 - handle: clarity
   provider: github
-  repo: vmware/clarity-assets
+  repo: vmware-archive/clarity-assets
   branch: master
   directory: icons
   website: https://clarity.design/foundation/icons/

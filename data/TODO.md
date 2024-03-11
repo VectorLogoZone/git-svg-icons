@@ -1,3 +1,6 @@
+yq 'sort_keys(..)|sort_by(.repo | upcase)' iconsearch.yaml | awk '{ if (/^-/) { print ""; print $0; } else { print $0; }}'
+
+
 https://github.com/Xaviju/inkscape-open-symbols/tree/master/sjjb
 
 Name & website for existing sources
