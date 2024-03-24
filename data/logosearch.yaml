@@ -35,7 +35,7 @@
   handle: wappalyzer
   repo: dochne/wappalyzer
   branch: main
-  directory: src/drivers/webextension/images/icons
+  directory: src/images/icons
   website: 'https://www.wappalyzer.com/'
   logo: 'https://www.vectorlogo.zone/logos/wappalyzer/wappalyzer-icon.svg'
 
@@ -696,15 +696,6 @@
   repo: tlezotte/victr-icons
   branch: master
   directory: src/SVG
-
-- provider: github
-  handle: todogroup
-  repo: todogroup/todogroup.org
-  branch: main
-  directory: static/img
-  website: 'https://todogroup.org/'
-  rename: [ "^(logo_)?(.*)$", "\\2" ]
-  logo: 'https://www.vectorlogo.zone/logos/todogroup/todogroup-icon.svg'
 
 - provider: github
   handle: uditkumar489
