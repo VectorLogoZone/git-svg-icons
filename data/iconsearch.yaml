@@ -53,6 +53,15 @@
   directory: assets
   provider: github
 
+- provider: github
+  handle: animal-identicons
+  repo: AwesomeLogos/animal-identicons
+  branch: main
+  directory: docs/images
+  website: 'https://animal-identicons.svg.zone/'
+  logo: 'https://animal-identicons.svg.zone/favicon.svg'
+  name: 'Animal Identicons'
+
 - handle: ant-design
   repo: ant-design/ant-design-icons
   branch: master
