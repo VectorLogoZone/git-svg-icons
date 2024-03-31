@@ -67,10 +67,11 @@
   branch: master
   directory: packages/icons-svg/svg
   provider: github
+  website: http://ant.design/#/components/icon
 
 - handle: akar
   provider: github
-  repo: artcoholic/akar-icons-app
+  repo: artcoholic/akar-icons
   branch: main
   directory: src/svg
   website: https://akaricons.com/
@@ -224,6 +225,13 @@
   directory: svg
   provider: github
 
+- handle: designmodo
+  repo: designmodo/Flat-UI
+  branch: master
+  directory: dist/images/icons
+  provider: github
+  website: https://designmodo.com/flat-free/
+
 - handle: devui
   provider: github
   repo: DevCloudFE/devui-icons
@@ -313,6 +321,13 @@
   branch: master
   directory: svg
 
+- handle: flowbite
+  provider: github.com
+  repo: themesberg/flowbite-icons
+  branch: main
+  directory: src
+  website: https://flowbite.com/icons/
+
 - handle: fontello
   repo: fontello/fontelico.font
   branch: master
@@ -324,6 +339,7 @@
   repo: framework7io/framework7-icons
   branch: master
   directory: src
+  website: https://framework7.io/icons/
 
 - handle: chutichhuy
   repo: chutichhuy/glyph-iconset
@@ -358,6 +374,13 @@
   branch: master
   directory: packages/gillicons/src/svgs
   provider: gitlab
+
+- handle: govicons
+  provider: github.com
+  repo: 540co/govicons
+  branch: develop
+  directory: raw-svg
+  website: http://govicons.io/
 
 - handle: grommit
   name: Grommit Icons
@@ -670,6 +693,13 @@
   repo: vmware-archive/pui-icons
   branch: master
   directory: src/icons
+
+- website: https://pictogrammers.com/library/memory/
+  provider: github
+  repo: Pictogrammers/Memory
+  branch: main
+  directory: packages/memory-svg
+  handle: pictogrammers-memory
 
 - handle: pprince
   repo: pprince/etlinefont-bower
