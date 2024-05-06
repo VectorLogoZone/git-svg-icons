@@ -72,7 +72,7 @@
 - handle: akar
   provider: github
   repo: artcoholic/akar-icons
-  branch: main
+  branch: master
   directory: src/svg
   website: https://akaricons.com/
 

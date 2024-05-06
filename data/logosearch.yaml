@@ -62,7 +62,7 @@
   handle: automattic-social-logos
   repo: Automattic/social-logos
   branch: trunk
-  directory: svg-min
+  directory: src/svg
   logo: https://www.vectorlogo.zone/logos/automattic/automattic-icon.svg
   website: https://automattic.github.io/social-logos/
 
@@ -170,19 +170,17 @@
 
 - provider: github
   handle: libreicons
-  repo: DiemenDesign/LibreICONS
+  repo: DennisSuitters/LibreICONS
   branch: master
   directory: svg
-  website: 'http://diemendesign.github.io/LibreICONS/'
   name: 'LibreIcons (black)'
   logo: 'https://www.vectorlogo.zone/logos/diemendesign/diemendesign-icon.svg'
 
 - provider: github
   handle: libreicons-color
-  repo: DiemenDesign/LibreICONS
+  repo: DennisSuitters/LibreICONS
   branch: master
   directory: svg-color
-  website: 'http://diemendesign.github.io/LibreICONS/'
   name: 'LibreIcons (color)'
   logo: 'https://www.vectorlogo.zone/logos/diemendesign/diemendesign-icon.svg'
 
