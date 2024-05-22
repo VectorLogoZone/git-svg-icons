@@ -445,6 +445,19 @@
   directory: assets
 
 - provider: github
+  handle: lucky-yoolk
+  repo: lucky-yoolk/icons-flat-osx
+  branch: master
+  directory: SVG
+  website: "https://yoolk.ninja/iconset/flat-osx/"
+
+- handle: homer-icons
+  provider: github
+  repo: NX211/homer-icons
+  branch: master
+  directory: svg
+
+- provider: github
   handle: font-logos
   repo: lukas-w/font-logos
   branch: master
@@ -483,6 +496,13 @@
   website: 'http://hexb.in/'
   name: 'Hexbin'
   logo: 'https://www.vectorlogo.zone/logos/hexbin/hexbin-icon.svg'
+
+- provider: github
+  handle: miguelsolorio
+  repo: miguelsolorio/vscode-symbols
+  branch: main
+  directory: src/icons/files
+  website: "https://miguelsolorio.com/icons/"
 
 - provider: gitlab
   handle: monopolies
@@ -696,6 +716,13 @@
   directory: src/SVG
 
 - provider: github
+  handle: tokenicons
+  repo: 0xa3k5/token-icons
+  branch: main
+  directory: packages/core/src/raw-svgs
+  website: https://tokenicons.io/
+
+- provider: github
   handle: uditkumar489
   repo: uditkumar489/Icon-pack
   branch: master
@@ -746,6 +773,12 @@
   repo: vscode-icons/vscode-icons
   branch: master
   directory: icons
+
+- handle: walkxcode
+  provider: github
+  repo: walkxcode/dashboard-icons
+  branch: main
+  directory: svg
 
 - provider: github
   handle: astro-build

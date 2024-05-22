@@ -165,6 +165,13 @@
   directory: dist/svg
   provider: github
 
+- handle: cloudscape
+  provider: github
+  repo: cloudscape-design/components
+  branch: main
+  directory: themes/icons
+  website: "https://cloudscape.design/"
+
 - handle: coreui
   repo: coreui/coreui-icons
   branch: v2
@@ -207,11 +214,18 @@
   directory: ''
   provider: gitlab
 
+- handle: haiku
+  provider: github
+  repo: darealshinji/haiku-icons
+  branch: master
+  directory: svg
+
 - handle: daviddarnes
   repo: daviddarnes/mac-cursors
   branch: main
   directory: src/svg
   provider: github
+  website: "https://mac-cursors.netlify.app/"
 
 - handle: davidmerfield
   repo: davidmerfield/Public-Icons
@@ -271,6 +285,12 @@
   provider: github
   website: https://dohliam.github.io/elegant-circles/
 
+- handle: enzet
+  provider: github
+  repo: enzet/map-machine
+  branch: main
+  directory: doc
+
 - handle: eos
   repo: SUSE-UIUX/eos-icons
   branch: master
@@ -314,6 +334,12 @@
   directory: icons
   provider: github
   website: https://feathericons.com/
+
+- handle: fontaudio
+  provider: github
+  repo: fefanto/fontaudio
+  branch: master
+  directory: svgs
 
 - handle: financialtimes
   provider: github
@@ -375,6 +401,12 @@
   directory: packages/gillicons/src/svgs
   provider: gitlab
 
+- handle: gnome-adwaita
+  provider: github
+  repo: GNOME/adwaita-icon-theme
+  branch: master
+  directory: Adwaita/scalable
+
 - handle: govicons
   provider: github.com
   repo: 540co/govicons
@@ -382,13 +414,13 @@
   directory: raw-svg
   website: http://govicons.io/
 
-- handle: grommit
-  name: Grommit Icons
+- handle: grommet
+  name: Grommet Icons
   repo: grommet/grommet-icons
   branch: master
   directory: public/img
   provider: github
-  website: github
+  website: "https://icons.grommet.io/"
 
 - handle: crypto
   provider: github
@@ -501,7 +533,21 @@
   directory: "SVG Files"
   provider: github
 
+- handle: circum
+  provider: github
+  repo: Klarr-Agency/Circum-Icons
+  branch: main
+  directory: svg
+  website: "https://circumicons.com/"
+
 # Check for duplicates: https://github.com/leungwensen/svg-icon/tree/master/dist/svg
+
+- handle: lucide
+  provider: github
+  repo: lucide-icons/lucide
+  branch: main
+  directory: icons
+  website: https://lucide.dev/
 
 - handle: lucijanblagonic
   repo: lucijanblagonic/Washicons
@@ -707,6 +753,13 @@
   directory: images/svg/individual_icons
   provider: github
 
+- handle: primeicons
+  provider: github
+  repo: primefaces/primeicons
+  branch: master
+  directory: raw-svg
+  website: https://www.primefaces.org/primeicons/
+
 - handle: primer
   repo: primer/octicons
   branch: main
@@ -720,6 +773,13 @@
   branch: master
   directory: packages/radix-icons/icons
   website: https://icons.modulz.app/
+
+- handle: rapideditor
+  provider: github
+  repo: rapideditor/temaki
+  branch: main
+  directory: icons
+  website: https://rapideditor.github.io/temaki/docs/
 
 - handle: remix-design
   repo: Remix-Design/RemixIcon
@@ -747,6 +807,15 @@
   directory: black/svg
   provider: github
 
+  https://github.com/planetabhi/sargam-icons/tree/main/Icons
+- handle: sargam
+  provider: github
+  repo: planetabhi/sargam-icons
+  branch: main
+  directory: Icons
+  rename: [ "^si_(.*)$", "\\1" ]
+  website: "https://sargamicons.com/"
+
 - handle: scottdejonge
   repo: scottdejonge/map-icons
   branch: master
@@ -758,6 +827,13 @@
   repo: shlinux/faenza-icon-theme
   branch: master
   directory: Faenza/apps/scalable
+
+- handle: shopify-polaris
+  provider: github
+  repo: Shopify/polaris
+  branch: main
+  directory: polaris-icons/icons
+  website: "https://polaris.shopify.com/icons"
 
 - handle: somerandomdude
   repo: somerandomdude/Iconic
@@ -873,12 +949,27 @@
   directory: ''
   provider: github
 
+- handle: uswds
+  provider: github
+  repo: uswds/uswds
+  branch: main
+  directory: packages/usa-icon/src/img/uswds-icons
+  website: https://designsystem.digital.gov/components/iconography/
+
 - handle: vaadin
   repo: vaadin/vaadin-icons
   branch: master
   directory: assets/svg
   website: https://vaadin.com/components/vaadin-icons
   provider: github
+
+- handle: font-gis
+  provider: github
+  repo: Viglino/font-gis
+  branch: main
+  directory: svg
+  rename: [ "^u[0-9A-F]{4}-(.*)$", "\\1" ]
+  website: "https://viglino.github.io/font-gis/"
 
 - handle: fluent-theme
   provider: github
@@ -960,6 +1051,13 @@
   directory: src/26
   provider: github
 
+- handle: humbleicons
+  provider: github
+  repo: zraly/humbleicons
+  branch: master
+  directory: icons
+  website: "https://humbleicons.com/"
+
 - handle: zurb
   repo: zurb/foundation-icon-fonts
   branch: master
@@ -967,3 +1065,14 @@
   rename: [ "^fi-(.*)$", "\\1" ]
   provider: github
   name: Foundation (Zurb)
+
+# https://exawizards.com/exabase/icons/ - needs indexing
+# https://hugeicons.com/icons - freemium
+# https://blendicons.com/ - freemium
+# https://glyphicons.com/ - freemium
+# https://greepit.com/open-source-icons-gcons/index.htm - no svgs
+# https://endlessicons.com/ - freemium
+# https://www.orioniconlibrary.com/all-icons - freemium
+# https://www.uicons.com/ - freemium
+# https://github.com/boyney123/awsicons (https://awsicons.dev/) - no svgs
+# https://druids.datadoghq.com/icons/icon-gallery - internal use only

@@ -1,5 +1,6 @@
 yq 'sort_keys(..)|sort_by(.repo | upcase)' iconsearch.yaml | awk '{ if (/^-/) { print ""; print $0; } else { print $0; }}'
 
+https://developer.apple.com/sf-symbols/
 
 https://github.com/Xaviju/inkscape-open-symbols/tree/master/sjjb
 
