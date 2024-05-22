@@ -105,6 +105,14 @@
   name: "AWS Architecture Icons"
   logos: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"
 
+- handle: sensa-emoji
+  provider: github
+  repo: AwesomeLogos/sensa-emoji
+  branch: main
+  directory: docs/images
+  name: "Sensa Emoji"
+  website: "https://sensa.co/emoji"
+
 - handle: axiansdeveloper
   repo: axiansdeveloper/networking-icons
   branch: master
