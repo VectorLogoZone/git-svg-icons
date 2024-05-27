@@ -65,13 +65,14 @@
   directory: logos
   name: 'logomono'
 
-- provider: github
-  handle: automattic-social-logos
-  repo: Automattic/social-logos
-  branch: trunk
-  directory: src/svg
-  logo: https://www.vectorlogo.zone/logos/automattic/automattic-icon.svg
-  website: https://automattic.github.io/social-logos/
+# converted to font, needs to be expanded
+#- provider: github
+#  handle: automattic-social-logos
+#  repo: Automattic/social-logos
+#  branch: trunk
+#  directory: src/svg
+#  logo: https://www.vectorlogo.zone/logos/automattic/automattic-icon.svg
+#  website: https://automattic.github.io/social-logos/
 
 - provider: github
   handle: badgen
