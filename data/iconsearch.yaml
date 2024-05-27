@@ -349,7 +349,7 @@
   directory: svg
 
 - handle: flowbite
-  provider: github.com
+  provider: github
   repo: themesberg/flowbite-icons
   branch: main
   directory: src
@@ -409,7 +409,7 @@
   directory: Adwaita/scalable
 
 - handle: govicons
-  provider: github.com
+  provider: github
   repo: 540co/govicons
   branch: develop
   directory: raw-svg
