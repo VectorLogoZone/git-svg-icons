@@ -808,7 +808,6 @@
   directory: black/svg
   provider: github
 
-  https://github.com/planetabhi/sargam-icons/tree/main/Icons
 - handle: sargam
   provider: github
   repo: planetabhi/sargam-icons
