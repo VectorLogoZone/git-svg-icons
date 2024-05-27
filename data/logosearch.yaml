@@ -10,6 +10,13 @@
   branch: master
   directory: src
 
+- handle: actions
+  name: Github Actions Starter Workflows
+  repo: actions/starter-workflows
+  branch: main
+  directory: icons
+  provider: github
+
 - provider: github
   handle: adamfairhead
   repo: adamfairhead/webicons
