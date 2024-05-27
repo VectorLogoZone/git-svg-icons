@@ -3,21 +3,12 @@
 [![build](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/release.yaml/badge.svg)](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/release.yaml)
 [![quality](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/quality.yaml/badge.svg)](https://github.com/VectorLogoZone/git-svg-icons/actions/workflows/quality.yaml)
 
-## Icons
+These are the lists of public git repositories of SVG images used by [LogoSearch](https://logosear.ch/) and [IconSearch](https://iconsear.ch/).
 
-Public git repositories of SVG icons: this is the list used by [IconSear.ch](https://iconsear.ch/).
+The [raw list for icons](data/iconsearch.yaml) and the [raw list for logos](data/logosearch.yaml) are here in this repository.
 
-You can see a nicely formatted version of the list at [IconSear.ch](https://iconsear.ch/sources/index.html).
+You can see a nicely formatted version of the lists at [LogoSearch](https://logosear.ch/sources/index.html) and [IconSearch](https://iconsear.ch/sources/index.html).
 
-The [raw list data](data/iconsearch.yaml) is here in this repository.
-
-## Logos
-
-Public git repositories of SVG logos: this is the list used by [LogoSear.ch](https://logosear.ch/).
-
-You can see a nicely formatted version of the list at [LogoSear.ch](https://logosear.ch/sources/index.html).
-
-The [raw list data](data/logosearch.yaml) is here in this repository.
 
 ## Contributing
 
