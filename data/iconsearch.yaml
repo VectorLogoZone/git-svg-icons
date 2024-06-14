@@ -949,6 +949,12 @@
   directory: ''
   provider: github
 
+- handle: uikit
+  repo: uikit/uikit
+  branch: develop
+  directory: src/images/icons
+  provider: github
+
 - handle: uswds
   provider: github
   repo: uswds/uswds
