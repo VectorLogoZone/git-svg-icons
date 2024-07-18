@@ -2,17 +2,10 @@
   provider: github
   repo: adobe/spectrum-css-workflow-icons
   branch: main
-  directory: dist/spectrum-css-workflow-icons/dist/24
+  directory: icons/assets/svg
   website: https://spectrum.adobe.com/page/icons/
   logo: https://spectrum.adobe.com/static/adobe_logo_spectrum_site.svg
-
-- handle: adobe-spectrum-color
-  provider: github
-  repo: adobe/spectrum-css-workflow-icons
-  branch: main
-  directory: dist/spectrum-css-workflow-icons/dist/color/24
-  website: https://spectrum.adobe.com/page/icons/
-  logo: https://spectrum.adobe.com/static/adobe_logo_spectrum_site.svg
+  rename: [ "^S2_Icon_(.*)_20_N.svg$", "\\1.svg" ]
 
 - handle: pictogramas
   provider: github
@@ -170,7 +163,7 @@
   provider: github
   repo: cloudscape-design/components
   branch: main
-  directory: themes/icons
+  directory: components/src/icon/icons
   website: "https://cloudscape.design/"
 
 - handle: coreui

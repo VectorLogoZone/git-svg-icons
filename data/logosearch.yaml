@@ -81,15 +81,6 @@
   website: 'https://badgen.net/'
 
 - provider: github
-  handle: shieldsio
-  repo: badges/shields
-  branch: master
-  directory: logo
-  website: 'https://shields.io/'
-  name: 'Shields.IO'
-  logo: 'https://www.vectorlogo.zone/logos/shieldsio/shieldsio-icon.svg'
-
-- provider: github
   handle: azure-icon-collection
   repo: benc-uk/icon-collection
   branch: master
