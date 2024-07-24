@@ -163,7 +163,7 @@
   provider: github
   repo: cloudscape-design/components
   branch: main
-  directory: components/src/icon/icons
+  directory: src/icon/icons
   website: "https://cloudscape.design/"
 
 - handle: coreui
