@@ -23,7 +23,7 @@ IMGTYPE=${1:-BAD}
 PROVIDER=${2:-BAD}
 if [ "${PROVIDER}" == "BAD" ] || [ "${IMGTYPE}" == "BAD" ]; then
 	echo "usage: build-index.sh IMGTYPE PROVIDER"
-    echo "       imgtype is [ logos | icons ]"
+    echo "       imgtype is [ emoji | icons | logos ]"
 	echo "       provider is [ github | gitlab ]"
 	exit 1
 fi

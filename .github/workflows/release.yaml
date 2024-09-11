@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        IDENTITY: [ iconsearch, logosearch, supertinyicons ]
+        IDENTITY: [ emojisearch, iconsearch, logosearch, supertinyicons ]
 
     steps:
       - uses: actions/checkout@master
@@ -40,7 +40,7 @@ jobs:
         run: ./bin/build-index.sh ${{ matrix.IDENTITY }} github
 
       - name: Build index for gitlab repos
-        if: ${{ matrix.IDENTITY != 'supertinyicons' }}
+        if: ${{ matrix.IDENTITY != 'supertinyicons' && matrix.IDENTITY != 'emojisearch' }}
         run: ./bin/build-index.sh ${{ matrix.IDENTITY }} gitlab
 
       - name: Build download file
