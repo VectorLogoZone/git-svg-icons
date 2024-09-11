@@ -64,7 +64,7 @@
 
 - handle: astrit
   repo: astrit/css.gg
-  branch: master
+  branch: main
   directory: icons/svg
   provider: github
 
@@ -148,9 +148,9 @@
 - handle: cfpb
   repo: cfpb/design-system
   branch: main
-  directory: packages/cfpb-icons/src/icons
+  directory: packages/cfpb-design-system/src/components/cfpb-icons/icons
   name: CFPB Design System
-  website: https://cfpb.github.io/design-system/
+  website: https://cfpb.github.io/design-system/foundation/iconography
   provider: github
 
 - handle: cjpatoilo

@@ -13,7 +13,7 @@ BASE_DIR=$(realpath "${SCRIPT_HOME}/..")
 IMGTYPE=${1:-BAD}
 if [ "${IMGTYPE}" == "BAD" ]; then
 	echo "usage: build-download.sh IMGTYPE"
-	echo "       imgtype is [ logos | icons ]"
+	echo "       imgtype is [ emoji | icons | logos ]"
 	exit 1
 fi
 

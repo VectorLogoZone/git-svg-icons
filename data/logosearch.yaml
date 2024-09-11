@@ -715,9 +715,9 @@
 
 - provider: github
   handle: tokenicons
-  repo: 0xa3k5/token-icons
+  repo: 0xa3k5/web3icons
   branch: main
-  directory: packages/core/src/raw-svgs
+  directory: packages/core/src/svgs
   website: https://tokenicons.io/
 
 - provider: github

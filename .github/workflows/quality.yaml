@@ -11,8 +11,12 @@ env:
   PYTHONUNBUFFERED: true
 
 jobs:
-  quality-icons:
+  quality:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        IDENTITY: [ emojisearch, iconsearch, logosearch, supertinyicons ]
 
     steps:
       - name: Checkout repo
@@ -28,25 +32,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install sh unidecode pyaml
 
-      - name: Validate icons  repos
-        run: ./bin/validate_repo.py --input=data/iconsearch.yaml
+      - name: Validate ${{ matrix.IDENTITY }} repos
+        run: ./bin/validate_repo.py --input=data/${{ matrix.IDENTITY }}.yaml
 
-  quality-logos:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@master
-
-      - name: Setup python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.9
-
-      - name: Install python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install sh unidecode pyaml
-
-      - name: Validate logos repos
-        run: ./bin/validate_repo.py --input=data/logosearch.yaml
