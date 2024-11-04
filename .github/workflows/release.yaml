@@ -48,10 +48,10 @@ jobs:
         run: ./bin/build-download.sh ${{ matrix.IDENTITY }}
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           if-no-files-found: ignore
-          name: release-artifacts
+          name: release-artifacts-${{ matrix.IDENTITY }}
           path: |
             build/download-${{ matrix.IDENTITY }}.tgz
             build/index-${{ matrix.IDENTITY }}-github.tgz
@@ -65,12 +65,10 @@ jobs:
 
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: release-artifacts
+        uses: actions/download-artifact@v4
 
       - name: List downloaded files
-        run: ls -R
+        run: ls -lR
 
       - name: Set release info
         run: |
@@ -82,15 +80,15 @@ jobs:
         with:
           fail_on_unmatched_files: true
           files: |
-            download-emojisearch.tgz
-            download-iconsearch.tgz
-            download-logosearch.tgz
-            index-emojisearch-github.tgz
-            index-iconsearch-github.tgz
-            index-iconsearch-gitlab.tgz
-            index-logosearch-github.tgz
-            index-logosearch-gitlab.tgz
-            index-supertinyicons-github.tgz
+            release-artifacts-emojisearch/download-emojisearch.tgz
+            release-artifacts-emojisearch/index-emojisearch-github.tgz
+            release-artifacts-iconsearch/download-iconsearch.tgz
+            release-artifacts-iconsearch/index-iconsearch-github.tgz
+            release-artifacts-iconsearch/index-iconsearch-gitlab.tgz
+            release-artifacts-logosearch/download-logosearch.tgz
+            release-artifacts-logosearch/index-logosearch-github.tgz
+            release-artifacts-logosearch/index-logosearch-gitlab.tgz
+            release-artifacts-supertinyicons/index-supertinyicons-github.tgz
           tag_name: ${{ env.RELEASE_TAG }}
           name: Release ${{ env.RELEASE_DATE }}
           body: |
