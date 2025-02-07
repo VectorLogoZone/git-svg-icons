@@ -344,6 +344,12 @@
   LATER-logo: ''
 
 - provider: github
+  handle: ppp
+  repo: johnpantini/ppp
+  branch: main
+  directory: static
+
+- provider: github
   handle: lacapitaine
   repo: keeferrourke/la-capitaine-icon-theme
   branch: master
@@ -698,7 +704,7 @@
   handle: tiagoporto-music
   repo: tiagoporto/svg-music-logos
   branch: main
-  directory: public/logos
+  directory: src/logos
   website: 'http://tiagoporto.github.io/svg-music-logos/'
 
 - provider: github
