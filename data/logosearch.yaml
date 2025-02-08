@@ -53,6 +53,20 @@
   directory: src
 
 - provider: github
+  handle: arcticons-black
+  repo: Arcticons-Team/Arcticons
+  branch: main
+  directory: icons/black
+  website: https://arcticons.com/
+
+- provider: github
+  handle: arcticons-white
+  repo: Arcticons-Team/Arcticons
+  branch: main
+  directory: icons/white
+  website: https://arcticons.com/
+
+- provider: github
   handle: azure-vector-icons
   repo: Ensono/azure-vector-icons
   branch: master
@@ -275,6 +289,13 @@
   name: 'Google Cloud Icons'
 
 - provider: github
+  handle: hackernoon
+  repo: hackernoon/pixel-icon-library
+  branch: main
+  directory: icons/SVG/brands
+  website: 'https://hackernoon.com/'
+
+- provider: github
   handle: haeckdesign
   repo: HaeckDesign/Get-Social-Social-Media-Font
   branch: master
@@ -329,12 +350,6 @@
   directory: img
 
 - provider: github
-  handle: fontos
-  repo: JunaidQadirB/font-os
-  branch: master
-  directory: vectors
-
-- provider: github
   handle: jimniels
   repo: jimniels/teamcolors
   branch: main
@@ -348,6 +363,19 @@
   repo: johnpantini/ppp
   branch: main
   directory: static
+
+- provider: github
+  handle: jpswalsh
+  repo: jpswalsh/academicons
+  branch: master
+  directory: svg
+  website: 'https://jpswalsh.github.io/academicons/'
+
+- provider: github
+  handle: fontos
+  repo: JunaidQadirB/font-os
+  branch: master
+  directory: vectors
 
 - provider: github
   handle: lacapitaine
@@ -695,6 +723,13 @@
   logo: 'https://www.vectorlogo.zone/logos/tablerio/tablerio-icon.svg'
 
 - provider: github
+  handle: tandpfun
+  repo: tandpfun/skill-icons
+  branch: main
+  directory: icons
+  website: https://skillicons.dev/
+
+- provider: github
   handle: focialmix
   repo: TheEssem/FocialMix
   branch: dev
@@ -738,6 +773,13 @@
   repo: uiwjs/file-icons
   branch: master
   directory: icon
+
+- provider: github
+  handle: unjs
+  repo: unjs/website
+  branch: main
+  directory: public/assets/logos
+  website: 'https://unjs.io/'
 
 - provider: github
   handle: valohai

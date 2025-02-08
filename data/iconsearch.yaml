@@ -1,3 +1,9 @@
+- handle: solar-icon-set
+  provider: github
+  repo: 480-Design/Solar-Icon-Set
+  branch: main
+  directory: icons/SVG
+
 - handle: adobe-spectrum
   provider: github
   repo: adobe/spectrum-css-workflow-icons
@@ -139,6 +145,12 @@
   directory: Public_Information_Symbols
   provider: github
 
+- handle: catppuccino
+  repo: catppuccino/vscode-icons
+  branch: main
+  directory: icons
+  provider: github
+
 - handle: ccicons
   repo: cc-icons/cc-icons
   branch: master
@@ -179,6 +191,12 @@
   branch: main
   directory: src/images/icons
   website: 'https://systemuicons.com/'
+  provider: github
+
+- handle: cyberalien
+  repo: cyberalien/line-md
+  branch: master
+  directory: svg
   provider: github
 
 - provider: github
@@ -408,6 +426,13 @@
   directory: raw-svg
   website: http://govicons.io/
 
+- handle: gravity
+  provider: github
+  repo: gravity-ui/icons
+  branch: main
+  directory: svgs
+  website: https://preview.gravity-ui.com/icons/
+
 - handle: grommet
   name: Grommet Icons
   repo: grommet/grommet-icons
@@ -424,6 +449,13 @@
 
 # Needs complicated renames: https://github.com/google/material-design-icons
 # same? https://github.com/material-icons/material-icons/tree/master/svg
+
+- provider: github
+  handle: hackernoon
+  repo: hackernoon/pixel-icon-library
+  branch: main
+  directory: icons/SVG
+  website: 'https://hackernoon.com/'
 
 - handle: halfmage
   repo: halfmage/pixelarticons
@@ -475,6 +507,13 @@
   directory: icons
   provider: github
 
+- handle: rivet
+  provider: github
+  repo: indiana-university/rivet-icons
+  branch: develop
+  directory: src/icons
+  website: https://rivet.iu.edu/
+
 - handle: ionic-team
   repo: ionic-team/ionicons
   branch: main
@@ -495,6 +534,12 @@
   directory: svg/svg
   website: http://www.sjjb.co.uk/mapicons/
 
+- handle: charm-icons
+  provider: github
+  repo: jaynewey/charm-icons
+  branch: main
+  directory: icons
+
 - handle: jcfields
   repo: jcfieldsdev/svg-file-icons
   branch: master
@@ -512,6 +557,12 @@
   branch: master
   directory: dist/icons
   provider: github
+
+- provider: github
+  handle: lacapitaine
+  repo: keeferrourke/la-capitaine-icon-theme
+  branch: master
+  directory: ''
 
 - handle: keyamoon
   repo: Keyamoon/IcoMoon-Free
@@ -539,6 +590,13 @@
 - handle: lucide
   provider: github
   repo: lucide-icons/lucide
+  branch: main
+  directory: icons
+  website: https://lucide.dev/
+
+- handle: lucide-lab
+  provider: github
+  repo: lucide-icons/lucide-lab
   branch: main
   directory: icons
   website: https://lucide.dev/
@@ -636,6 +694,14 @@
   website: https://ikonate.com/
   name: "Ikonate"
 
+- handle: mingcute
+  provider: github
+  repo: Richard9394/MingCute
+  branch: main
+  directory: svg
+  website: "https://www.mingcute.com/"
+  logo: "https://www.mingcute.com/static/images/logo.svg"
+
 - handle: moneytree
   provider: github
   repo: moneytree/mt-web-icons
@@ -655,6 +721,12 @@
   repo: mysticsymbolic/mysticsymbolic.github.io
   branch: main
   directory: assets/symbols
+
+- handle: spinners
+  provider: github
+  repo: n3r4zzurr0/svg-spinners
+  branch: main
+  directory: ""
 
 - handle: nicodinh
   repo: nicodinh/kenney-icon-font
@@ -746,6 +818,20 @@
   branch: master
   directory: images/svg/individual_icons
   provider: github
+
+- handle: mynaui
+  provider: github
+  repo: praveenjuge/mynaui-icons
+  branch: main
+  directory: icons
+  website: https://mynaui.com/icons
+
+- handle: mynaui-solid
+  provider: github
+  repo: praveenjuge/mynaui-icons
+  branch: main
+  directory: icons-solid
+  website: https://mynaui.com/icons
 
 - handle: primeicons
   provider: github
@@ -995,6 +1081,13 @@
   directory: icons
   website: https://clarity.design/foundation/icons/
 
+- handle: streamline
+  provider: github
+  repo: webalys-hq/streamline-vectors
+  branch: main
+  directory: ""
+  website: "https://www.streamlinehq.com/"
+
 - handle: wordpress
   repo: WordPress/dashicons
   branch: master
@@ -1049,6 +1142,13 @@
   branch: main
   directory: src/26
   provider: github
+
+- handle: zkreations
+  provider: github
+  repo: zkreations/icons
+  branch: main
+  directory: icons
+  website: "https://meteoricons.com/"
 
 - handle: humbleicons
   provider: github
