@@ -145,12 +145,6 @@
   directory: Public_Information_Symbols
   provider: github
 
-- handle: catppuccino
-  repo: catppuccino/vscode-icons
-  branch: main
-  directory: icons
-  provider: github
-
 - handle: ccicons
   repo: cc-icons/cc-icons
   branch: master
@@ -289,6 +283,13 @@
   provider: github
   name: Zondicons
   website: https://www.zondicons.com/
+
+- provider: github
+  handle: elax46
+  repo: elax46/custom-brand-icons
+  branch: main
+  directory: icon-svg
+  website: "https://elax46.github.io/custom-brand-icons/"
 
 - handle: elegantcircles
   repo: dohliam/elegant-circles

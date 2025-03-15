@@ -718,7 +718,7 @@
   handle: tabler
   repo: tabler/tabler
   branch: main
-  directory: src/img
+  directory: core/img
   website: 'https://tabler.io/'
   logo: 'https://www.vectorlogo.zone/logos/tablerio/tablerio-icon.svg'
 
@@ -822,7 +822,7 @@
 
 - handle: walkxcode
   provider: github
-  repo: walkxcode/dashboard-icons
+  repo: homarr-labs/dashboard-icons
   branch: main
   directory: svg
 
