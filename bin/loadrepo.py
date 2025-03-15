@@ -224,7 +224,7 @@ for repo_handle in args.repos:
         elif repodata['provider'] == 'github':
             imgurl = "https://raw.githubusercontent.com/" + repodata["repo"] + "/" + repodata["branch"] + srcpath[len(gitdir):]
         elif repodata['provider'] == 'gitlab':
-            imgurl = "https://gitlab.svg.zone/" + repodata["repo"] + "/raw/" + repodata["branch"] + urllib.parse.quote(srcpath[len(gitdir):])
+            imgurl = "https://proxy.svg.zone/gitlab/" + repodata["repo"] + "/raw/" + repodata["branch"] + urllib.parse.quote(srcpath[len(gitdir):])
 
         if repodata['provider'] == 'github':
             srcurl = giturl + "/blob/" + repodata['branch'] + srcpath[len(gitdir):]
