@@ -105,7 +105,7 @@
   handle: bestofjs
   repo: bestofjs/bestofjs
   branch: master
-  directory: apps/bestofjs-nextjs/public/logos
+  directory: apps/web/public/logos
   website: 'https://bestofjs.org/'
 #logo
 

@@ -641,15 +641,6 @@
   directory: SVG
   provider: github
 
-- handle: michaelampr
-  repo: michaelampr/jam
-  branch: master
-  directory: icons
-  provider: github
-  website: https://jam-icons.com/
-  name: "Jam Icons"
-  logo: https://jam-icons.com/logo.svg
-
 - handle: microns
   repo: stephenhutchings/microns
   branch: master
@@ -774,8 +765,7 @@
   provider: github
   repo: PapirusDevelopmentTeam/papirus-icon-theme
   branch: master
-  directory: Papirus/symbolic
-  rename:  [ "^(.*)-symbolic.svg$", "\\1.svg" ]
+  directory: Papirus/64x64
 
 - handle: pfefferle
   provider: github
