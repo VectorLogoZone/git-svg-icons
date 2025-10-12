@@ -524,7 +524,7 @@
 
 - handle: jackd248
   repo: jackd248/weather-iconic
-  branch: master
+  branch: main
   directory: sources/SVG
   provider: github
 
@@ -841,7 +841,7 @@
 - handle: radix
   provider: github
   repo: radix-ui/icons
-  branch: master
+  branch: main
   directory: packages/radix-icons/icons
   website: https://icons.modulz.app/
 
@@ -900,7 +900,7 @@
 
 - handle: shopify-polaris
   provider: github
-  repo: Shopify/polaris
+  repo: Shopify/polaris-react
   branch: main
   directory: polaris-icons/icons
   website: "https://polaris.shopify.com/icons"
@@ -1131,7 +1131,7 @@
 - handle: zendeskgarden
   repo: zendeskgarden/svg-icons
   branch: main
-  directory: src/26
+  directory: src/16
   provider: github
 
 - handle: zkreations
