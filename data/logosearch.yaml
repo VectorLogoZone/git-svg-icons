@@ -739,7 +739,7 @@
   handle: tiagoporto-music
   repo: tiagoporto/svg-music-logos
   branch: main
-  directory: src/logos
+  directory: logos
   website: 'http://tiagoporto.github.io/svg-music-logos/'
 
 - provider: github
